@@ -1,5 +1,873 @@
 [
   {
+    "label": "Main System",
+    "value": "202.6.0-2390"
+  },
+  {
+    "label": "IMB-S4 Software Version",
+    "value": "1.3.0-10129@FC5"
+  },
+  {
+    "label": "Core Software",
+    "value": "cave root 2025-07-08.193627"
+  },
+  {
+    "label": "IMB-S4 FPGA Version",
+    "value": "2.0.21824"
+  },
+  {
+    "label": "HKB FPGA",
+    "value": "1.0.21931"
+  },
+  {
+    "label": "HKB Hardware",
+    "value": "4.4.2 (M.P.R)"
+  },
+  {
+    "label": "Version Mismatch",
+    "value": "False"
+  },
+  {
+    "label": "VOM Hardware",
+    "value": "VOMCI.2.0"
+  },
+  {
+    "label": "CAVE Hardware",
+    "value": "CAVE.3.0"
+  },
+  {
+    "label": "BIOS",
+    "value": "00.28t2"
+  },
+  {
+    "label": "IMB-S4 Board Revision",
+    "value": "1.2.0"
+  },
+  {
+    "label": "UCD Version",
+    "value": "N/A"
+  },
+  {
+    "label": "Card Cage Intake 101",
+    "value": "0 RPM"
+  },
+  {
+    "label": "CAVE Blower 102",
+    "value": "2940 RPM"
+  },
+  {
+    "label": "Card Cage Exhaust 103",
+    "value": "0 RPM"
+  },
+  {
+    "label": "Blue Formatter 3",
+    "value": "0 RPM"
+  },
+  {
+    "label": "Green Formatter 4",
+    "value": "0 RPM"
+  },
+  {
+    "label": "Red Formatter 5",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC B 46",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC B 47",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC B 48",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC B 49",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 25",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 26",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 27",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 28",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 29",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LE Intake 30",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC A 21",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC A 22",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC A 23",
+    "value": "0 RPM"
+  },
+  {
+    "label": "LDCC A 24",
+    "value": "0 RPM"
+  },
+  {
+    "label": "Diffuser",
+    "value": "0 RPM"
+  },
+  {
+    "label": "Red DMD",
+    "value": "N/A"
+  },
+  {
+    "label": "Blue DMD",
+    "value": "N/A"
+  },
+  {
+    "label": "Green DMD",
+    "value": "N/A"
+  },
+  {
+    "label": "Ambient",
+    "value": "OPEN"
+  },
+  {
+    "label": "Red Formatter",
+    "value": "N/A"
+  },
+  {
+    "label": "Green Formatter",
+    "value": "N/A"
+  },
+  {
+    "label": "Blue Formatter",
+    "value": "N/A"
+  },
+  {
+    "label": "CAVE",
+    "value": "36℃"
+  },
+  {
+    "label": "CAVE FPGA",
+    "value": "51℃"
+  },
+  {
+    "label": "Image Processor Scaler",
+    "value": "48℃"
+  },
+  {
+    "label": "VOM FPGA",
+    "value": "37℃"
+  },
+  {
+    "label": "DMD Waterblock",
+    "value": "N/A"
+  },
+  {
+    "label": "Liquid Cooling Manifold",
+    "value": "24.06℃"
+  },
+  {
+    "label": "LiteLOC™ Max Ambient Temperature",
+    "value": "35℃"
+  },
+  {
+    "label": "IMB-S4 FPGA",
+    "value": "39.19℃"
+  },
+  {
+    "label": "IMB-S4 U55",
+    "value": "33℃"
+  },
+  {
+    "label": "IMB-S4 Q8",
+    "value": "30℃"
+  },
+  {
+    "label": "IMB-S4 Q9",
+    "value": "29℃"
+  },
+  {
+    "label": "CSB Temperature",
+    "value": "N/A"
+  },
+  {
+    "label": "Laser CPU Temperature",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller Setpoint Temperature",
+    "value": "24℃"
+  },
+  {
+    "label": "Chiller Water Temperature",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller Ambient Temperature",
+    "value": "N/A"
+  },
+  {
+    "label": "Ambient Dewpoint",
+    "value": "N/A"
+  },
+  {
+    "label": "LOS1 Dewpoint",
+    "value": "N/A"
+  },
+  {
+    "label": "LOS2 Dewpoint",
+    "value": "N/A"
+  },
+  {
+    "label": "Serial Number",
+    "value": "Jay28"
+  },
+  {
+    "label": "Model Number",
+    "value": "CP4450-RGB"
+  },
+  {
+    "label": "Build Date",
+    "value": "2000-01-08"
+  },
+  {
+    "label": "Electronic Serial Number",
+    "value": "C113123C7528"
+  },
+  {
+    "label": "NTP Enabled",
+    "value": "True"
+  },
+  {
+    "label": "DST Enabled",
+    "value": "True"
+  },
+  {
+    "label": "Time Zone",
+    "value": "Eastern (Toronto)"
+  },
+  {
+    "label": "UTC Time",
+    "value": "3/8/2025, 8:21:47 PM"
+  },
+  {
+    "label": "Local Time",
+    "value": "3/8/2025, 3:21:47 PM"
+  },
+  {
+    "label": "SM UTC Time",
+    "value": "7/11/2025, 7:22:00 PM"
+  },
+  {
+    "label": "Local Time Offset",
+    "value": "-05:00:00"
+  },
+  {
+    "label": "Total Memory",
+    "value": "3.70 GB"
+  },
+  {
+    "label": "Free Memory",
+    "value": "2.92 GB"
+  },
+  {
+    "label": "Average CPU Usage",
+    "value": "12"
+  },
+  {
+    "label": "Root Total Disk Space",
+    "value": "4.47 GB"
+  },
+  {
+    "label": "Root Free Disk Space",
+    "value": "1.74 GB"
+  },
+  {
+    "label": "Number of Content Drives",
+    "value": "2"
+  },
+  {
+    "label": "Number of Ingest Drives",
+    "value": "5"
+  },
+  {
+    "label": "Last Upgrade Result",
+    "value": "Success"
+  },
+  {
+    "label": "IMB Data Partition Free Disk Space",
+    "value": "8.59 GB"
+  },
+  {
+    "label": "IMB Data Partition Total Disk Space",
+    "value": "9.40 GB"
+  },
+  {
+    "label": "Content Validation Percent",
+    "value": "0"
+  },
+  {
+    "label": "Content Validation State",
+    "value": "0"
+  },
+  {
+    "label": "Model Sub Type",
+    "value": "A"
+  },
+  {
+    "label": "SID Health",
+    "value": "Online"
+  },
+  {
+    "label": "Laser Power Supply State",
+    "value": "N/A"
+  },
+  {
+    "label": "HKB Online",
+    "value": "True"
+  },
+  {
+    "label": "CSB Online",
+    "value": "False"
+  },
+  {
+    "label": "IMB Online",
+    "value": "True"
+  },
+  {
+    "label": "Selected IMB Type",
+    "value": "Christie Series 4 IMB"
+  },
+  {
+    "label": "IMB Status",
+    "value": "OK"
+  },
+  {
+    "label": "Douser Open",
+    "value": "False"
+  },
+  {
+    "label": "Douser Sensor Error",
+    "value": "True"
+  },
+  {
+    "label": "Startup Components Ready",
+    "value": "True"
+  },
+  {
+    "label": "Projector Healthy",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Current",
+    "value": "0"
+  },
+  {
+    "label": "LVPS A1 Voltage",
+    "value": "0"
+  },
+  {
+    "label": "LVPS A1 Over Temperature",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Over Current",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Over Voltage",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Fan Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Unit Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 High Temp",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Very Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Current",
+    "value": "0"
+  },
+  {
+    "label": "LVPS A2 Voltage",
+    "value": "0"
+  },
+  {
+    "label": "LVPS A2 Over Temperature",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Over Current",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Over Voltage",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Fan Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Unit Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 High Temp",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A2 Very Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Current",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B1 Voltage",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B1 Over Temperature",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Over Current",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Over Voltage",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Fan Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Unit Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 High Temp",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B1 Very Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Current",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B2 Voltage",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B2 Over Temperature",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Over Current",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Over Voltage",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Fan Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Unit Failure",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 High Temp",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS B2 Very Low AC",
+    "value": "False"
+  },
+  {
+    "label": "LVPS A1 Communication Failure",
+    "value": "True"
+  },
+  {
+    "label": "LVPS A2 Communication Failure",
+    "value": "True"
+  },
+  {
+    "label": "LVPS B1 Communication Failure",
+    "value": "True"
+  },
+  {
+    "label": "LVPS B2 Communication Failure",
+    "value": "True"
+  },
+  {
+    "label": "LVPS A1 Temperature",
+    "value": "0"
+  },
+  {
+    "label": "LVPS A2 Temperature",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B1 Temperature",
+    "value": "0"
+  },
+  {
+    "label": "LVPS B2 Temperature",
+    "value": "0"
+  },
+  {
+    "label": "RealD 3D EQ Enabled",
+    "value": "False"
+  },
+  {
+    "label": "System Hours",
+    "value": "42665"
+  },
+  {
+    "label": "Light On Hours",
+    "value": "68"
+  },
+  {
+    "label": "LOS 1 Laser On Hours",
+    "value": "N/A"
+  },
+  {
+    "label": "LOS 1 Standby Hours",
+    "value": "N/A"
+  },
+  {
+    "label": "LOS 2 Laser On Hours",
+    "value": "N/A"
+  },
+  {
+    "label": "LOS 2 Standby Hours",
+    "value": "N/A"
+  },
+  {
+    "label": "Multi Projector Secondary Offline",
+    "value": "False"
+  },
+  {
+    "label": "Incomplete or Corrupted Content Detected",
+    "value": "False"
+  },
+  {
+    "label": "CAVE State",
+    "value": "OK"
+  },
+  {
+    "label": "VOM State",
+    "value": "OK"
+  },
+  {
+    "label": "Videopath Communication Online",
+    "value": "True"
+  },
+  {
+    "label": "Scheduled IMB SM Self Test",
+    "value": "2025-07-18 15:09:21"
+  },
+  {
+    "label": "FM Location ID",
+    "value": "819200"
+  },
+  {
+    "label": "Electronics Initialization Fault",
+    "value": "False"
+  },
+  {
+    "label": "System Up Time",
+    "value": "0:04:12:59"
+  },
+  {
+    "label": "IMB Onboard Storage Type",
+    "value": "1.2"
+  },
+  {
+    "label": "IMB RAID Overall Status",
+    "value": "Clean"
+  },
+  {
+    "label": "IMB RAID Disk 1 Status",
+    "value": "Clean"
+  },
+  {
+    "label": "IMB RAID Disk 2 Status",
+    "value": "Clean"
+  },
+  {
+    "label": "IMB RAID Disk 3 Status",
+    "value": "Clean"
+  },
+  {
+    "label": "ALT Audio Present",
+    "value": "True"
+  },
+  {
+    "label": "Number of ALT Audio Channels",
+    "value": "0"
+  },
+  {
+    "label": "ALT Audio Sample Rate Hz",
+    "value": "0"
+  },
+  {
+    "label": "IMB Battery 1",
+    "value": "Good"
+  },
+  {
+    "label": "IMB Battery 2",
+    "value": "Good"
+  },
+  {
+    "label": "IMB Media Player Online",
+    "value": "True"
+  },
+  {
+    "label": "IMB Audio Test Signal Enabled",
+    "value": "False"
+  },
+  {
+    "label": "Primary Storage Device",
+    "value": "Christie-Nas"
+  },
+  {
+    "label": "Primary Drive Online",
+    "value": "True"
+  },
+  {
+    "label": "Onboard Storage Online",
+    "value": "True"
+  },
+  {
+    "label": "Onboard Storage Total Disk Space",
+    "value": "1.68 TB"
+  },
+  {
+    "label": "Onboard Storage Free Disk Space",
+    "value": "1.65 TB"
+  },
+  {
+    "label": "Onboard Storage Used Disk Space",
+    "value": "31.54 GB"
+  },
+  {
+    "label": "NAS Online",
+    "value": "True"
+  },
+  {
+    "label": "NAS Total Disk Space",
+    "value": "N/A"
+  },
+  {
+    "label": "NAS Free Disk Space",
+    "value": "N/A"
+  },
+  {
+    "label": "NAS Used Disk Space",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB SSD 1 Model",
+    "value": "SFPC960GM1AR4MT-I-7C-62H-STD"
+  },
+  {
+    "label": "IMB SSD 2 Model",
+    "value": "SFPC960GM1AR4MT-I-7C-62H-STD"
+  },
+  {
+    "label": "IMB SSD 3 Model",
+    "value": "SFPC960GM1AR4MT-I-7C-62H-STD"
+  },
+  {
+    "label": "Light Source Shut Off Due to Component Over Temp",
+    "value": "False"
+  },
+  {
+    "label": "DMD Coolant Flow Good",
+    "value": "True"
+  },
+  {
+    "label": "Light Source Turned Off Due to Coolant Flow Error",
+    "value": "False"
+  },
+  {
+    "label": "Light Source Shut Off Due to Diffuser Not Spinning",
+    "value": "False"
+  },
+  {
+    "label": "Unexpected Light Source Off",
+    "value": "0"
+  },
+  {
+    "label": "LiteLOC™ Target Reachable",
+    "value": "N/A"
+  },
+  {
+    "label": "Light On Failure",
+    "value": "N/A"
+  },
+  {
+    "label": "Ambient Relative Humidity",
+    "value": "OPEN"
+  },
+  {
+    "label": "Laser Subsystem Connected",
+    "value": "False"
+  },
+  {
+    "label": "Laser Main Code CRC",
+    "value": "N/A"
+  },
+  {
+    "label": "Laser Power State",
+    "value": "N/A"
+  },
+  {
+    "label": "Overall LOS Health",
+    "value": "N/A"
+  },
+  {
+    "label": "CSB DAC Calibration",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor(X)",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor(Y)",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor(Z)",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor Gain(X)",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor Gain(Y)",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor Gain(Z)",
+    "value": "N/A"
+  },
+  {
+    "label": "CSB Serial",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller State",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller Alarm Status",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller Flow Rate (LPM)",
+    "value": "N/A"
+  },
+  {
+    "label": "System Dewpoints State",
+    "value": "N/A"
+  },
+  {
+    "label": "Chiller Manufacturer",
+    "value": "Teyu"
+  },
+  {
+    "label": "LiteLOC™ Sensor to Screen Calibration",
+    "value": "N/A"
+  },
+  {
+    "label": "LiteLOC™ LOS to Sensor Calibration",
+    "value": "N/A"
+  },
+  {
+    "label": "Color Sensor Board (CSB) Type",
+    "value": "N/A"
+  },
+  {
+    "label": "ELD",
+    "value": "Disabled"
+  },
+  {
+    "label": "Chiller Pressure (PSI)",
+    "value": "N/A"
+  },
+  {
+    "label": "Service Mode Enabled",
+    "value": "False"
+  },
+  {
+    "label": "LOS1 Drive Limits",
+    "value": "Disabled"
+  },
+  {
+    "label": "LOS2 Drive Limits",
+    "value": "Disabled"
+  },
+  {
+    "label": "Light Source Development Mode",
+    "value": "False"
+  },
+  {
     "label": "ILS Active File",
     "value": "ILS Flat"
   },
@@ -34,5 +902,721 @@
   {
     "label": "Lens Type",
     "value": "Generic Zoom"
+  },
+  {
+    "label": "Atmos Enabled",
+    "value": "False"
+  },
+  {
+    "label": "Atmos Online",
+    "value": "False"
+  },
+  {
+    "label": "Management IP",
+    "value": "192.168.230.169"
+  },
+  {
+    "label": "Management Netmask",
+    "value": "255.255.252.0"
+  },
+  {
+    "label": "Management DHCP",
+    "value": "False"
+  },
+  {
+    "label": "Management MAC",
+    "value": "80:1F:12:3C:75:28"
+  },
+  {
+    "label": "Management IP Conflict",
+    "value": "False"
+  },
+  {
+    "label": "Management Gateway",
+    "value": "192.168.228.1"
+  },
+  {
+    "label": "IMB Network NAS Status",
+    "value": "Available"
+  },
+  {
+    "label": "IMB Network NAS Link",
+    "value": "Up"
+  },
+  {
+    "label": "IMB Network NAS IP",
+    "value": "192.168.228.81"
+  },
+  {
+    "label": "IMB Network NAS Netmask",
+    "value": "255.255.252.0"
+  },
+  {
+    "label": "IMB Network NAS DHCP",
+    "value": "True"
+  },
+  {
+    "label": "IMB Network NAS Gateway",
+    "value": "192.168.228.1"
+  },
+  {
+    "label": "IMB Network NAS MAC Address",
+    "value": "fc:0f:e7:17:d8:46"
+  },
+  {
+    "label": "IMB Network Media Status",
+    "value": "Available"
+  },
+  {
+    "label": "IMB Network Media Link",
+    "value": "Up"
+  },
+  {
+    "label": "IMB Network Media IP",
+    "value": "192.168.1.100"
+  },
+  {
+    "label": "IMB Network Media Netmask",
+    "value": "255.255.255.0"
+  },
+  {
+    "label": "IMB Network Media DHCP",
+    "value": "False"
+  },
+  {
+    "label": "IMB Network Media Gateway",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Network Media MAC Address",
+    "value": "fc:0f:e7:17:f6:4a"
+  },
+  {
+    "label": "IMB Network Aux Audio Status",
+    "value": "Available"
+  },
+  {
+    "label": "IMB Network Aux Audio Link",
+    "value": "Down"
+  },
+  {
+    "label": "IMB Network Aux Audio IP",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Network Aux Audio Netmask",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Network Aux Audio DHCP",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Network Aux Audio Gateway",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Network Aux Audio MAC Address",
+    "value": "fc:0f:e7:18:19:97"
+  },
+  {
+    "label": "Local Fire Alarm",
+    "value": "True"
+  },
+  {
+    "label": "Unexpected power off due to Fire Alarm",
+    "value": "False"
+  },
+  {
+    "label": "HKB Serial Number",
+    "value": "VS18172249520060"
+  },
+  {
+    "label": "Main Control Board",
+    "value": "VM1912500569"
+  },
+  {
+    "label": "Formatter Red",
+    "value": "N/A"
+  },
+  {
+    "label": "Formatter Green",
+    "value": "N/A"
+  },
+  {
+    "label": "Formatter Blue",
+    "value": "N/A"
+  },
+  {
+    "label": "Variable Option Module",
+    "value": "VOM2"
+  },
+  {
+    "label": "Native Array Width",
+    "value": "4096"
+  },
+  {
+    "label": "Native Array Height",
+    "value": "2160"
+  },
+  {
+    "label": "Channel Active File",
+    "value": "Media Block Scope"
+  },
+  {
+    "label": "Gamma Active File",
+    "value": "Auto"
+  },
+  {
+    "label": "MCGD Left Active File",
+    "value": "2D-MultiProj"
+  },
+  {
+    "label": "MCGD Right Active File",
+    "value": "2D-MultiProj"
+  },
+  {
+    "label": "TCGD Active File",
+    "value": "DC28 DCI XYZE 314 351"
+  },
+  {
+    "label": "3D Active File",
+    "value": "Default"
+  },
+  {
+    "label": "Source Active File",
+    "value": "Auto Square Pixels"
+  },
+  {
+    "label": "Screen Active File",
+    "value": "4096x2160 No Crop"
+  },
+  {
+    "label": "EDID Active File",
+    "value": "N/A"
+  },
+  {
+    "label": "Christie Pureformity Color™ Correction File",
+    "value": "Bypass"
+  },
+  {
+    "label": "Light Source Active File",
+    "value": "Default"
+  },
+  {
+    "label": "CLUT Active File",
+    "value": "Linear 9x9x9"
+  },
+  {
+    "label": "RealD 3D File",
+    "value": "N/A"
+  },
+  {
+    "label": "3D Sync Input Mode",
+    "value": "Auto"
+  },
+  {
+    "label": "Color Space Active File",
+    "value": "Auto"
+  },
+  {
+    "label": "Detected Input Video Pixel Width",
+    "value": "0"
+  },
+  {
+    "label": "Detected Input Video Lines",
+    "value": "0"
+  },
+  {
+    "label": "Detected Input Video Frame Rate",
+    "value": "0"
+  },
+  {
+    "label": "Video Sub Image X",
+    "value": "0"
+  },
+  {
+    "label": "Video Sub Image Y",
+    "value": "0"
+  },
+  {
+    "label": "Video Sub Image Width",
+    "value": "0"
+  },
+  {
+    "label": "Video Sub Image Height",
+    "value": "0"
+  },
+  {
+    "label": "Video Output X Pos",
+    "value": "0"
+  },
+  {
+    "label": "Video Output Y Pos",
+    "value": "0"
+  },
+  {
+    "label": "Video Output Width",
+    "value": "0"
+  },
+  {
+    "label": "Video Output Height",
+    "value": "0"
+  },
+  {
+    "label": "Video Input",
+    "value": "IMB"
+  },
+  {
+    "label": "Video Data Format",
+    "value": "4:4:4 (RGB)"
+  },
+  {
+    "label": "Video Scan Type",
+    "value": "Auto"
+  },
+  {
+    "label": "Video 3D Mode",
+    "value": "False"
+  },
+  {
+    "label": "Laser Calibration Active File",
+    "value": "Default"
+  },
+  {
+    "label": "Video Output Frequency",
+    "value": "N/A"
+  },
+  {
+    "label": "HDMI Port 1 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "HDMI Port 2 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "IMB Video Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "Display Port 1 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "Display Port 2 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "SDI 1 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "SDI 2 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "SDI 3 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "SDI 4 Signal",
+    "value": "N/A"
+  },
+  {
+    "label": "Warp File",
+    "value": "Bypass.C4TW"
+  },
+  {
+    "label": "Playback Secondary Mode",
+    "value": "0"
+  },
+  {
+    "label": "Video Buffer Full Percent",
+    "value": "0"
+  },
+  {
+    "label": "Audio Buffer Full Percent",
+    "value": "0"
+  },
+  {
+    "label": "Playback Loop Mode",
+    "value": "False"
+  },
+  {
+    "label": "Audio Delay MS",
+    "value": "0"
+  },
+  {
+    "label": "Audio Sample Rate",
+    "value": "0kHz"
+  },
+  {
+    "label": "Audio Output Rate",
+    "value": "48kHz"
+  },
+  {
+    "label": "Intermission Active",
+    "value": "False"
+  },
+  {
+    "label": "Playback 3D Content",
+    "value": "False"
+  },
+  {
+    "label": "Playback 3D Playlist",
+    "value": "False"
+  },
+  {
+    "label": "Playback Power Loss Auto Recovery",
+    "value": "False"
+  },
+  {
+    "label": "Dolby Atmos Online",
+    "value": "False"
+  },
+  {
+    "label": "Playback load error; Remote content missing",
+    "value": "N/A"
+  },
+  {
+    "label": "Playback load error content missing",
+    "value": "N/A"
+  },
+  {
+    "label": "Playback Buffer Underrun",
+    "value": "False"
+  },
+  {
+    "label": "Playback Content Error",
+    "value": "False"
+  },
+  {
+    "label": "Subtitles Enabled",
+    "value": "True"
+  },
+  {
+    "label": "Subtitles Time Code",
+    "value": "00:00:00.000"
+  },
+  {
+    "label": "Playback general play error",
+    "value": "N/A"
+  },
+  {
+    "label": "Scheduler Enabled",
+    "value": "True"
+  },
+  {
+    "label": "Scheduler Next Show ID",
+    "value": "511942e8-b332-48b7-b97f-a98107506c70"
+  },
+  {
+    "label": "Scheduler Next Show Name",
+    "value": "01_3D_CACTUS_RIGHT_TST_F_EN-XX_UK_4K_20140905_ONS_OV"
+  },
+  {
+    "label": "Scheduler Next Show Time",
+    "value": "3/9/2025, 1:55:00 AM"
+  },
+  {
+    "label": "Automation Enabled",
+    "value": "True"
+  },
+  {
+    "label": "Macro Health",
+    "value": "OK"
+  },
+  {
+    "label": "Automation Devices Online",
+    "value": "True"
+  },
+  {
+    "label": "Last Macro Complete",
+    "value": "FIRE_ALARM$FIRE_ALARM"
+  },
+  {
+    "label": "Last Before Clip Macro Complete",
+    "value": "N/A"
+  },
+  {
+    "label": "Christie NAS Attached",
+    "value": "True"
+  },
+  {
+    "label": "Model Name",
+    "value": "NAS-S2"
+  },
+  {
+    "label": "Version",
+    "value": "4.3.3"
+  },
+  {
+    "label": "Time",
+    "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+  },
+  {
+    "label": "CPU Usage",
+    "value": "0 %"
+  },
+  {
+    "label": "CPU Temperature in Celsius",
+    "value": "39"
+  },
+  {
+    "label": "Total Memory",
+    "value": "984.8"
+  },
+  {
+    "label": "Free Memory",
+    "value": "515.9"
+  },
+  {
+    "label": "Serial Number",
+    "value": "Q15CI11623"
+  },
+  {
+    "label": "Uptime in Hours",
+    "value": "1064"
+  },
+  {
+    "label": "Standby Enabled",
+    "value": "False"
+  },
+  {
+    "label": "Standby Time Interval",
+    "value": "30"
+  },
+  {
+    "label": "Eth1 Address",
+    "value": "192.168.1.101"
+  },
+  {
+    "label": "Eth1 MAC Address",
+    "value": "00:08:9b:f7:da:9a"
+  },
+  {
+    "label": "Eth1 Setup",
+    "value": "STATIC"
+  },
+  {
+    "label": "Eth2 Address",
+    "value": "0.0.0.0"
+  },
+  {
+    "label": "Eth2 MAC Address",
+    "value": "00:08:9b:f7:da:9b"
+  },
+  {
+    "label": "Eth2 Setup",
+    "value": "STATIC"
+  },
+  {
+    "label": "NFS Enabled",
+    "value": "True"
+  },
+  {
+    "label": "FTP Enabled",
+    "value": "False"
+  },
+  {
+    "label": "rsync Enabled",
+    "value": "False"
+  },
+  {
+    "label": "RTRR Enabled",
+    "value": "False"
+  },
+  {
+    "label": "Volume 1 Label",
+    "value": "DataVol1"
+  },
+  {
+    "label": "Volume 1 Status",
+    "value": "Ready"
+  },
+  {
+    "label": "Volume 2 Label",
+    "value": "N/A"
+  },
+  {
+    "label": "Volume 2 Status",
+    "value": "Not Present"
+  },
+  {
+    "label": "Volume 3 Label",
+    "value": "N/A"
+  },
+  {
+    "label": "Volume 3 Status",
+    "value": "Not Present"
+  },
+  {
+    "label": "Volume 4 Label",
+    "value": "N/A"
+  },
+  {
+    "label": "Volume 4 Status",
+    "value": "Not Present"
+  },
+  {
+    "label": "HD1 Exists",
+    "value": "Yes"
+  },
+  {
+    "label": "HD1 Vendor",
+    "value": "Seagate ST1000NM0033-9ZM173 SN04"
+  },
+  {
+    "label": "HD1 Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD1 I/O Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD1 SMART Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD1 Temperature Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD1 Overall Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD1 Last Test Type",
+    "value": "No Last Test"
+  },
+  {
+    "label": "HD1 Last Test Status",
+    "value": "N/A"
+  },
+  {
+    "label": "HD1 Last Test Time",
+    "value": "Thu Jan 1 01:00:00 1970"
+  },
+  {
+    "label": "HD2 Exists",
+    "value": "Yes"
+  },
+  {
+    "label": "HD2 Vendor",
+    "value": "Seagate ST1000NM0033-9ZM173 SN04"
+  },
+  {
+    "label": "HD2 Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD2 I/O Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD2 SMART Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD2 Temperature Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD2 Overall Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD2 Last Test Type",
+    "value": "No Last Test"
+  },
+  {
+    "label": "HD2 Last Test Status",
+    "value": "N/A"
+  },
+  {
+    "label": "HD2 Last Test Time",
+    "value": "Thu Jan 1 01:00:00 1970"
+  },
+  {
+    "label": "HD3 Exists",
+    "value": "Yes"
+  },
+  {
+    "label": "HD3 Vendor",
+    "value": "Seagate ST1000NM0033-9ZM173 SN04"
+  },
+  {
+    "label": "HD3 Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD3 I/O Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD3 SMART Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD3 Temperature Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD3 Overall Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD3 Last Test Type",
+    "value": "No Last Test"
+  },
+  {
+    "label": "HD3 Last Test Status",
+    "value": "N/A"
+  },
+  {
+    "label": "HD3 Last Test Time",
+    "value": "Thu Jan 1 01:00:00 1970"
+  },
+  {
+    "label": "HD4 Exists",
+    "value": "Yes"
+  },
+  {
+    "label": "HD4 Vendor",
+    "value": "Seagate ST1000NM0033-9ZM173 SN04"
+  },
+  {
+    "label": "HD4 Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD4 I/O Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD4 SMART Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD4 Temperature Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD4 Overall Health",
+    "value": "OK"
+  },
+  {
+    "label": "HD4 Last Test Type",
+    "value": "No Last Test"
+  },
+  {
+    "label": "HD4 Last Test Status",
+    "value": "N/A"
+  },
+  {
+    "label": "HD4 Last Test Time",
+    "value": "Thu Jan 1 01:00:00 1970"
   }
 ]

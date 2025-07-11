@@ -10,8 +10,7 @@ from typing import List, Dict
 
 # --- Configuration ---
 BASE_URL = "http://localhost:4200/"
-SCRAPE_URLS = ["#/status/Lens",
-               '#/status/Versions',
+SCRAPE_URLS = ['#/status/Versions',
                '#/status/Fans',
                '#/status/Temperatures',
                '#/status/System',
@@ -128,13 +127,14 @@ def main():
         # Navigate to the base site and log in once
         driver.get(BASE_URL)
         login(driver)
-
+        print('131')
         all_data = []
 
         for idx, hash_url in enumerate(SCRAPE_URLS, start=1):
             try:
                 print(f"\n[{idx}/{len(SCRAPE_URLS)}] Navigating to: {hash_url}")
                 driver.execute_script(f"window.location.hash = '{hash_url}';")
+                
 
                 # Optional: wait for the route to load
                 WebDriverWait(driver, 10).until(
@@ -159,3 +159,5 @@ def main():
     finally:
         driver.quit()
         print("✅ Scraper finished and browser closed.")
+if __name__ == "__main__":
+    main()
