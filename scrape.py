@@ -9,7 +9,8 @@ import time
 from typing import List, Dict
 
 # --- Configuration ---
-URL = "http://localhost:4200/#/status/Lens"
+BASE_URL = "http://localhost:4200/"
+SCRAPE_HASH = "#/status/Lens"
 OUTPUT_FILE = "status_data.json"
 CHROME_DRIVER_PATH = './chromedriver.exe'
 WAIT_TIMEOUT = 10
@@ -24,8 +25,8 @@ def setup_driver() -> webdriver.Chrome:
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
     # Disable microphone access to prevent voice transcription errors
-    #prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
-    #options.add_experimental_option("prefs", prefs)
+    prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
+    options.add_experimental_option("prefs", prefs)
     # options.add_argument("--headless")  # Uncomment for headless execution
     return webdriver.Chrome(service=service, options=options)
 
@@ -33,21 +34,23 @@ def setup_driver() -> webdriver.Chrome:
 def login(driver: webdriver.Chrome):
     """Handles the login process."""
     try:
-        # Wait for the login elements to be present
         username_field = WebDriverWait(driver, WAIT_TIMEOUT).until(
             EC.presence_of_element_located((By.ID, "login-username-text-input"))
         )
         password_field = driver.find_element(By.ID, "login-password-text-input")
         submit_button = driver.find_element(By.ID, "submit-button")
 
-        # Enter credentials and login
         username_field.clear()
         username_field.send_keys(USERNAME)
         password_field.send_keys(PASSWORD)
         submit_button.click()
+        
+        # Wait for login to complete by checking for the dashboard URL
+        WebDriverWait(driver, WAIT_TIMEOUT).until(EC.url_contains("dashboard"))
+        print("Login successful.")
 
     except TimeoutException:
-        print("Login elements not found within the timeout period.")
+        print("Login elements not found or login failed within the timeout period.")
         raise
     except NoSuchElementException:
         print("Could not find one of the login elements.")
@@ -56,36 +59,20 @@ def login(driver: webdriver.Chrome):
 
 def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     """
-    Navigates to the specified URL and scrapes status items.
+    Scrapes status items from the current page.
 
     Args:
         driver: The Selenium WebDriver instance.
 
     Returns:
-        A list of dictionaries, where each dictionary represents a scraped item
-        with "label" and "value" keys.
+        A list of dictionaries, where each dictionary represents a scraped item.
     """
-    driver.get("http://localhost:4200/")
-    
-    # Perform login
-    login(driver)
-
-    # Wait until dashboard is loaded
-    WebDriverWait(driver, 10).until(EC.url_contains("/dashboard"))
-    
-    driver.execute_script("window.location.hash ='#/status/Lens';")
-
-    # After login, navigate to the target URL for scraping
-    driver.get(URL)
-
     results = []
     try:
-        # Wait for the status items to be present after login
         WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=POLL_FREQUENCY).until(
             EC.presence_of_element_located((By.CLASS_NAME, "status-item"))
         )
-        # Optional sleep to allow for dynamic content loading
-        time.sleep(2)
+        time.sleep(2)  # Optional sleep for dynamic content
 
         items = driver.find_elements(By.CLASS_NAME, "status-item")
         for item in items:
@@ -98,7 +85,7 @@ def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
                 print("⚠️ Could not find label or value for an item.")
                 continue
     except TimeoutException:
-        print(f"Timed out waiting for page elements to load at {URL}")
+        print(f"Timed out waiting for status items to load on the page.")
     return results
 
 
@@ -108,11 +95,9 @@ def save_results(results: List[Dict[str, str]]):
         print("No data was scraped.")
         return
 
-    # Output to console
     for r in results:
         print(f"{r['label']}: {r['value']}")
 
-    # Save to JSON
     try:
         with open(OUTPUT_FILE, "w", encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
@@ -125,8 +110,21 @@ def main():
     """Main function to run the scraper."""
     driver = setup_driver()
     try:
+        # Navigate to the base site and log in
+        driver.get(BASE_URL)
+        login(driver)
+
+        # Navigate to the specific page to scrape using execute_script
+        print(f"Navigating to view: {SCRAPE_HASH}")
+        driver.execute_script(f"window.location.hash = '{SCRAPE_HASH}';")
+        
+        # Scrape the data
         scraped_data = scrape_status_items(driver)
         save_results(scraped_data)
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
     finally:
         driver.quit()
 
