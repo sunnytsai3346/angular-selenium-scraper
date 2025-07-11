@@ -65,7 +65,10 @@ def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     
     # Perform login
     login(driver)
-    
+
+    # After login, navigate to the target URL for scraping
+    driver.get(URL)
+
     results = []
     try:
         # Wait for the status items to be present after login
