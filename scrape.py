@@ -23,6 +23,9 @@ def setup_driver() -> webdriver.Chrome:
     service = Service(CHROME_DRIVER_PATH)
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
+    # Disable microphone access to prevent voice transcription errors
+    prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
+    options.add_experimental_option("prefs", prefs)
     # options.add_argument("--headless")  # Uncomment for headless execution
     return webdriver.Chrome(service=service, options=options)
 
