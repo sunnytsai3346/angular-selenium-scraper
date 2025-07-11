@@ -10,7 +10,22 @@ from typing import List, Dict
 
 # --- Configuration ---
 BASE_URL = "http://localhost:4200/"
-SCRAPE_HASH = "#/status/Lens"
+SCRAPE_URLS = ["#/status/Lens",
+               '#/status/Versions',
+               '#/status/Fans',
+               '#/status/Temperatures',
+               '#/status/System',
+               '#/status/Lamp',
+               '#/status/Lens',
+               '#/status/Network',
+               '#/status/Interlocks',
+               '#/status/Serial',
+               '#/status/Video',
+               '#/status/Playback',
+               '#/status/Scheduler',
+               '#/status/Automation',
+               '#/status/ChristieNAS',
+               '#/status/Debugging']
 OUTPUT_FILE = "status_data.json"
 CHROME_DRIVER_PATH = './chromedriver.exe'
 WAIT_TIMEOUT = 10
@@ -107,27 +122,40 @@ def save_results(results: List[Dict[str, str]]):
 
 
 def main():
-    """Main function to run the scraper."""
+    """Main function to run the scraper for multiple hash URLs."""
     driver = setup_driver()
     try:
-        # Navigate to the base site and log in
+        # Navigate to the base site and log in once
         driver.get(BASE_URL)
         login(driver)
 
-        # Navigate to the specific page to scrape using execute_script
-        print(f"Navigating to view: {SCRAPE_HASH}")
-        driver.execute_script(f"window.location.hash = '{SCRAPE_HASH}';")
-        
-        # Scrape the data
-        scraped_data = scrape_status_items(driver)
-        save_results(scraped_data)
+        all_data = []
+
+        for idx, hash_url in enumerate(SCRAPE_URLS, start=1):
+            try:
+                print(f"\n[{idx}/{len(SCRAPE_URLS)}] Navigating to: {hash_url}")
+                driver.execute_script(f"window.location.hash = '{hash_url}';")
+
+                # Optional: wait for the route to load
+                WebDriverWait(driver, 10).until(
+                    lambda d: hash_url.strip("#") in d.current_url
+                )
+
+                # Scrape this view
+                scraped_data = scrape_status_items(driver)
+
+                # Tag or store per route
+                all_data.extend(scraped_data)
+
+            except Exception as scrape_err:
+                print(f"⚠️ Failed to scrape {hash_url}: {scrape_err}")
+
+        # Save final combined results
+        save_results(all_data)
 
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        print(f"❌ Critical error occurred: {e}")
 
     finally:
         driver.quit()
-
-
-if __name__ == "__main__":
-    main()
+        print("✅ Scraper finished and browser closed.")
