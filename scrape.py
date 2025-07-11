@@ -3,49 +3,92 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import json
 import time
+from typing import List, Dict
 
-# Setup Chrome WebDriver
-service = Service('./chromedriver')  # adjust path if needed
-options = webdriver.ChromeOptions()
-options.add_argument("--start-maximized")
+# --- Configuration ---
+URL = "http://localhost:4200/#/menu/MMM%2BSTAT"
+OUTPUT_FILE = "status_data.json"
+CHROME_DRIVER_PATH = './chromedriver.exe'
+WAIT_TIMEOUT = 10
+POLL_FREQUENCY = 0.5
 
-driver = webdriver.Chrome(service=service, options=options)
 
-try:
-    # Step 1: Go to Angular app page
-    url = "http://localhost:4200/#/menu/MMM%2BSTAT"
-    driver.get(url)
+def setup_driver() -> webdriver.Chrome:
+    """Sets up and returns a Chrome WebDriver instance."""
+    service = Service(CHROME_DRIVER_PATH)
+    options = webdriver.ChromeOptions()
+    options.add_argument("--start-maximized")
+    # options.add_argument("--headless")  # Uncomment for headless execution
+    return webdriver.Chrome(service=service, options=options)
 
-    # Step 2: Wait for Angular to render '.status-item' components
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CLASS_NAME, "status-item"))
-    )
 
-    # Optional: Wait longer if content is still loading
-    time.sleep(2)
+def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
+    """
+    Navigates to the specified URL and scrapes status items.
 
-    # Step 3: Scrape each label-value pair
-    items = driver.find_elements(By.CLASS_NAME, "status-item")
+    Args:
+        driver: The Selenium WebDriver instance.
+
+    Returns:
+        A list of dictionaries, where each dictionary represents a scraped item
+        with "label" and "value" keys.
+    """
+    driver.get(URL)
     results = []
+    try:
+        # Wait for the status items to be present
+        WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=POLL_FREQUENCY).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "status-item"))
+        )
+        # Optional sleep to allow for dynamic content loading
+        time.sleep(2)
 
-    for item in items:
-        try:
-            label = item.find_element(By.CLASS_NAME, "status-item-label").text.strip()
-            value = item.find_element(By.CLASS_NAME, "status-item-value").text.strip()
-            results.append({"label": label, "value": value})
-        except Exception as e:
-            print("⚠️ Failed to extract item:", e)
+        items = driver.find_elements(By.CLASS_NAME, "status-item")
+        for item in items:
+            try:
+                label = item.find_element(By.CLASS_NAME, "status-item-label").text.strip()
+                value = item.find_element(By.CLASS_NAME, "status-item-value").text.strip()
+                if label and value:
+                    results.append({"label": label, "value": value})
+            except NoSuchElementException:
+                print("⚠️ Could not find label or value for an item.")
+                continue
+    except TimeoutException:
+        print(f"Timed out waiting for page elements to load at {URL}")
+    return results
 
-    # Step 4: Output to console
+
+def save_results(results: List[Dict[str, str]]):
+    """Saves the scraped results to a JSON file and prints them to the console."""
+    if not results:
+        print("No data was scraped.")
+        return
+
+    # Output to console
     for r in results:
         print(f"{r['label']}: {r['value']}")
 
-    # Step 5: Save to JSON
-    with open("status_data.json", "w", encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print("✅ Saved to status_data.json")
+    # Save to JSON
+    try:
+        with open(OUTPUT_FILE, "w", encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+        print(f"✅ Saved to {OUTPUT_FILE}")
+    except IOError as e:
+        print(f"Error saving data to {OUTPUT_FILE}: {e}")
 
-finally:
-    driver.quit()
+
+def main():
+    """Main function to run the scraper."""
+    driver = setup_driver()
+    try:
+        scraped_data = scrape_status_items(driver)
+        save_results(scraped_data)
+    finally:
+        driver.quit()
+
+
+if __name__ == "__main__":
+    main()
