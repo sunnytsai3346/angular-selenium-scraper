@@ -81,26 +81,47 @@ def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     Returns:
         A list of dictionaries, where each dictionary represents a scraped item.
     """
-    results = []
-    try:
-        WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=POLL_FREQUENCY).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "status-item"))
-        )
-        time.sleep(2)  # Optional sleep for dynamic content
+    items = []
+    current_url = driver.current_url
 
-        items = driver.find_elements(By.CLASS_NAME, "status-item")
-        for item in items:
-            try:
-                label = item.find_element(By.CLASS_NAME, "status-item-label").text.strip()
-                value = item.find_element(By.CLASS_NAME, "status-item-value").text.strip()
-                if label and value:
-                    results.append({"label": label, "value": value})
-            except NoSuchElementException:
-                print("⚠️ Could not find label or value for an item.")
-                continue
-    except TimeoutException:
-        print(f"Timed out waiting for status items to load on the page.")
-    return results
+    try:
+        if "/status" in current_url:
+            print("📄 Scraping using status-item-label/status-item-value pattern")
+
+            # Wait for at least one status item to appear
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "status-item-label"))
+            )
+
+            labels = driver.find_elements(By.CLASS_NAME, "status-item-label")
+            values = driver.find_elements(By.CLASS_NAME, "status-item-value")
+
+            for label_el, value_el in zip(labels, values):
+                items.append({
+                    "name": label_el.text.strip(),
+                    "value": value_el.text.strip()
+                })
+
+        else:
+            print("📄 Scraping using info-name/info-value pattern")
+
+            # Wait until info-name and info-value are present
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, "info-name"))
+            )
+
+            name_el = driver.find_element(By.ID, "info-name")
+            value_el = driver.find_element(By.ID, "info-value")
+
+            items.append({
+                "name": name_el.text.strip(),
+                "value": value_el.text.strip()
+            })
+
+    except Exception as e:
+        print(f"⚠️ Failed to scrape on {current_url}: {e}")
+
+    return items
 
 
 def save_results(results: List[Dict[str, str]]):
