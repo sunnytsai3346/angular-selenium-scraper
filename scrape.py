@@ -24,8 +24,8 @@ def setup_driver() -> webdriver.Chrome:
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
     # Disable microphone access to prevent voice transcription errors
-    prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
-    options.add_experimental_option("prefs", prefs)
+    #prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
+    #options.add_experimental_option("prefs", prefs)
     # options.add_argument("--headless")  # Uncomment for headless execution
     return webdriver.Chrome(service=service, options=options)
 
@@ -65,10 +65,15 @@ def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
         A list of dictionaries, where each dictionary represents a scraped item
         with "label" and "value" keys.
     """
-    driver.get(URL)
+    driver.get("http://localhost:4200/")
     
     # Perform login
     login(driver)
+
+    # Wait until dashboard is loaded
+    WebDriverWait(driver, 10).until(EC.url_contains("/dashboard"))
+    
+    driver.execute_script("window.location.hash ='#/status/Lens';")
 
     # After login, navigate to the target URL for scraping
     driver.get(URL)

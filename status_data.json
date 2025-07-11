@@ -1,0 +1,38 @@
+[
+  {
+    "label": "ILS Active File",
+    "value": "ILS Flat"
+  },
+  {
+    "label": "ILS X Sensor",
+    "value": "Failed"
+  },
+  {
+    "label": "ILS Y Sensor",
+    "value": "Failed"
+  },
+  {
+    "label": "ILS Z Sensor",
+    "value": "Failed"
+  },
+  {
+    "label": "ILS F Sensor",
+    "value": "Failed"
+  },
+  {
+    "label": "ILS Disabled Keepout Motors",
+    "value": "Vertical & Horizontal & Focus"
+  },
+  {
+    "label": "ILS Calibration",
+    "value": "Horizontal & Vertical & Focus & Zoom"
+  },
+  {
+    "label": "ILS Reset",
+    "value": "Horizontal & Vertical & Focus"
+  },
+  {
+    "label": "Lens Type",
+    "value": "Generic Zoom"
+  }
+]
