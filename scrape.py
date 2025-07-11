@@ -14,6 +14,8 @@ OUTPUT_FILE = "status_data.json"
 CHROME_DRIVER_PATH = './chromedriver.exe'
 WAIT_TIMEOUT = 10
 POLL_FREQUENCY = 0.5
+USERNAME = "service"
+PASSWORD = "service"
 
 
 def setup_driver() -> webdriver.Chrome:
@@ -23,6 +25,29 @@ def setup_driver() -> webdriver.Chrome:
     options.add_argument("--start-maximized")
     # options.add_argument("--headless")  # Uncomment for headless execution
     return webdriver.Chrome(service=service, options=options)
+
+
+def login(driver: webdriver.Chrome):
+    """Handles the login process."""
+    try:
+        # Wait for the login elements to be present
+        username_field = WebDriverWait(driver, WAIT_TIMEOUT).until(
+            EC.presence_of_element_located((By.ID, "login-username-text-input"))
+        )
+        password_field = driver.find_element(By.ID, "login-password-text-input")
+        submit_button = driver.find_element(By.ID, "submit-button")
+
+        # Enter credentials and login
+        username_field.send_keys(USERNAME)
+        password_field.send_keys(PASSWORD)
+        submit_button.click()
+
+    except TimeoutException:
+        print("Login elements not found within the timeout period.")
+        raise
+    except NoSuchElementException:
+        print("Could not find one of the login elements.")
+        raise
 
 
 def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
@@ -37,9 +62,13 @@ def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
         with "label" and "value" keys.
     """
     driver.get(URL)
+    
+    # Perform login
+    login(driver)
+    
     results = []
     try:
-        # Wait for the status items to be present
+        # Wait for the status items to be present after login
         WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=POLL_FREQUENCY).until(
             EC.presence_of_element_located((By.CLASS_NAME, "status-item"))
         )
