@@ -9,7 +9,7 @@ import time
 from typing import List, Dict
 
 # --- Configuration ---
-URL = "http://localhost:4200/#/menu/MMM%2BSTAT"
+URL = "http://localhost:4200/#/status/Lens"
 OUTPUT_FILE = "status_data.json"
 CHROME_DRIVER_PATH = './chromedriver.exe'
 WAIT_TIMEOUT = 10
@@ -38,6 +38,7 @@ def login(driver: webdriver.Chrome):
         submit_button = driver.find_element(By.ID, "submit-button")
 
         # Enter credentials and login
+        username_field.clear()
         username_field.send_keys(USERNAME)
         password_field.send_keys(PASSWORD)
         submit_button.click()
