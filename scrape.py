@@ -1,184 +1,202 @@
+import json
+import logging
+import argparse
+from typing import List, Dict, Optional
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-import json
-import time
-from typing import List, Dict
+
 
 # --- Configuration ---
-BASE_URL = "http://localhost:4200/"
-SCRAPE_URLS = ['#/status/Versions',
-               '#/status/Fans',
-               '#/status/Temperatures',
-               '#/status/System',
-               '#/status/Lamp',
-               '#/status/Lens',
-               '#/status/Network',
-               '#/status/Interlocks',
-               '#/status/Serial',
-               '#/status/Video',
-               '#/status/Playback',
-               '#/status/Scheduler',
-               '#/status/Automation',
-               '#/status/ChristieNAS',
-               '#/status/Debugging']
-OUTPUT_FILE = "status_data.json"
-CHROME_DRIVER_PATH = './chromedriver.exe'
-WAIT_TIMEOUT = 10
-POLL_FREQUENCY = 0.5
-USERNAME = "service"
-PASSWORD = "service"
+class Config:
+    """Configuration class for the scraper."""
+    BASE_URL = "http://localhost:4200/"
+    SCRAPE_URLS = [
+        '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
+        '#/status/System', '#/status/Lamp', '#/status/Lens',
+        '#/status/Network', '#/status/Interlocks', '#/status/Serial',
+        '#/status/Video', '#/status/Playback', '#/status/Scheduler',
+        '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging'
+    ]
+    OUTPUT_FILE = "status_data.json"
+    CHROME_DRIVER_PATH = './chromedriver.exe'
+    WAIT_TIMEOUT = 10
+    POLL_FREQUENCY = 0.5
+    USERNAME = "service"
+    PASSWORD = "service"
+
+
+def setup_logging():
+    """Sets up basic logging."""
+    logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def setup_driver() -> webdriver.Chrome:
     """Sets up and returns a Chrome WebDriver instance."""
-    service = Service(CHROME_DRIVER_PATH)
+    service = Service(Config.CHROME_DRIVER_PATH)
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
-    # Disable microphone access to prevent voice transcription errors
     prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
     options.add_experimental_option("prefs", prefs)
-    # options.add_argument("--headless")  # Uncomment for headless execution
+    # options.add_argument("--headless")
     return webdriver.Chrome(service=service, options=options)
 
 
 def login(driver: webdriver.Chrome):
     """Handles the login process."""
     try:
-        username_field = WebDriverWait(driver, WAIT_TIMEOUT).until(
+        # Check if already logged in by looking for the dashboard URL
+        if "dashboard" in driver.current_url:
+            logging.info("Already logged in.")
+            return
+
+        username_field = WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
             EC.presence_of_element_located((By.ID, "login-username-text-input"))
         )
         password_field = driver.find_element(By.ID, "login-password-text-input")
         submit_button = driver.find_element(By.ID, "submit-button")
 
         username_field.clear()
-        username_field.send_keys(USERNAME)
-        password_field.send_keys(PASSWORD)
+        username_field.send_keys(Config.USERNAME)
+        password_field.send_keys(Config.PASSWORD)
         submit_button.click()
-        
-        # Wait for login to complete by checking for the dashboard URL
-        WebDriverWait(driver, WAIT_TIMEOUT).until(EC.url_contains("dashboard"))
-        print("Login successful.")
+
+        WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
+            EC.url_contains("dashboard"))
+        logging.info("Login successful.")
 
     except TimeoutException:
-        print("Login elements not found or login failed within the timeout period.")
+        logging.error("Login elements not found or login failed.")
         raise
     except NoSuchElementException:
-        print("Could not find one of the login elements.")
+        logging.error("Could not find one of the login elements.")
         raise
 
 
-def scrape_status_items(driver: webdriver.Chrome) -> List[Dict[str, str]]:
+def scrape_page(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     """
-    Scrapes status items from the current page.
-
-    Args:
-        driver: The Selenium WebDriver instance.
-
-    Returns:
-        A list of dictionaries, where each dictionary represents a scraped item.
+    Scrapes status items from the current page using different strategies.
     """
     items = []
-    current_url = driver.current_url
+    strategies = [
+        (By.CLASS_NAME, "status-item-label", By.CLASS_NAME, "status-item-value"),
+        (By.ID, "info-name", By.ID, "info-value")
+    ]
 
-    try:
-        if "/status" in current_url:
-            print("📄 Scraping using status-item-label/status-item-value pattern")
-
-            # Wait for at least one status item to appear
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "status-item-label"))
+    for label_by, label_locator, value_by, value_locator in strategies:
+        try:
+            # Wait for at least one label to be present
+            WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
+                EC.presence_of_element_located((label_by, label_locator))
             )
+            labels = driver.find_elements(label_by, label_locator)
+            values = driver.find_elements(value_by, value_locator)
 
-            labels = driver.find_elements(By.CLASS_NAME, "status-item-label")
-            values = driver.find_elements(By.CLASS_NAME, "status-item-value")
-
-            for label_el, value_el in zip(labels, values):
-                items.append({
-                    "name": label_el.text.strip(),
-                    "value": value_el.text.strip()
-                })
-
-        else:
-            print("📄 Scraping using info-name/info-value pattern")
-
-            # Wait until info-name and info-value are present
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.ID, "info-name"))
-            )
-
-            name_el = driver.find_element(By.ID, "info-name")
-            value_el = driver.find_element(By.ID, "info-value")
-
-            items.append({
-                "name": name_el.text.strip(),
-                "value": value_el.text.strip()
-            })
-
-    except Exception as e:
-        print(f"⚠️ Failed to scrape on {current_url}: {e}")
-
+            if labels and values:
+                logging.info(f"Scraping using {label_by.upper()}: {label_locator}")
+                for label_el, value_el in zip(labels, values):
+                    items.append({
+                        "name": label_el.text.strip(),
+                        "value": value_el.text.strip()
+                    })
+                # If we found items with this strategy, we can break
+                return items
+        except TimeoutException:
+            # This strategy didn't find any elements, try the next one
+            continue
+    
+    logging.warning(f"No scrapeable elements found on {driver.current_url}")
     return items
 
 
-def save_results(results: List[Dict[str, str]]):
-    """Saves the scraped results to a JSON file and prints them to the console."""
+def save_results(results: List[Dict[str, str]], output_file: str):
+    """Saves the scraped results to a JSON file."""
     if not results:
-        print("No data was scraped.")
+        logging.info("No data was scraped.")
         return
 
-    for r in results:
-        print(f"{r['label']}: {r['value']}")
+    logging.info(f"Scraped {len(results)} items.")
+
+    # Load EN.json to create a name -> url map
+    try:
+        with open('EN.json', 'r', encoding='utf-8') as f:
+            en_data = json.load(f)
+        name_to_url = {item['name']: item.get('url') for item in en_data}
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        logging.error(f"Could not load or parse EN.json: {e}")
+        name_to_url = {}
+
+    # Restructure the results to match the desired format
+    structured_results = []
+    for item in results:
+        name = item.get("name", "").strip()
+        if not name:
+            continue
+            
+        structured_results.append({
+            "name": name,
+            "value": item.get("value", "").strip(),
+            "url": name_to_url.get(name)  # Get URL from map, defaults to None (null in JSON)
+        })
 
     try:
-        with open(OUTPUT_FILE, "w", encoding='utf-8') as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-        print(f"✅ Saved to {OUTPUT_FILE}")
+        with open(output_file, "w", encoding='utf-8') as f:
+            json.dump(structured_results, f, ensure_ascii=False, indent=2)
+        logging.info(f"✅ Saved to {output_file}")
     except IOError as e:
-        print(f"Error saving data to {OUTPUT_FILE}: {e}")
+        logging.error(f"Error saving data to {output_file}: {e}")
 
 
-def main():
-    """Main function to run the scraper for multiple hash URLs."""
+def main(output_file: Optional[str] = None):
+    """Main function to run the scraper."""
+    setup_logging()
+    output_file = output_file or Config.OUTPUT_FILE
+    
     driver = setup_driver()
+    all_data = []
     try:
-        # Navigate to the base site and log in once
-        driver.get(BASE_URL)
+        driver.get(Config.BASE_URL)
         login(driver)
-        print('131')
-        all_data = []
 
-        for idx, hash_url in enumerate(SCRAPE_URLS, start=1):
+        for idx, hash_url in enumerate(Config.SCRAPE_URLS, start=1):
+            full_url = f"{Config.BASE_URL}{hash_url}"
+            logging.info(f"[{idx}/{len(Config.SCRAPE_URLS)}] Navigating to: {full_url}")
             try:
-                print(f"\n[{idx}/{len(SCRAPE_URLS)}] Navigating to: {hash_url}")
-                driver.execute_script(f"window.location.hash = '{hash_url}';")
+                # Using direct navigation is more reliable than executing script
+                driver.get(full_url)
                 
-
-                # Optional: wait for the route to load
-                WebDriverWait(driver, 10).until(
-                    lambda d: hash_url.strip("#") in d.current_url
+                # Wait for the URL to update
+                WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
+                    EC.url_contains(hash_url.strip("#"))
                 )
 
-                # Scrape this view
-                scraped_data = scrape_status_items(driver)
+                scraped_data = scrape_page(driver)
+                if scraped_data:
+                    all_data.extend(scraped_data)
 
-                # Tag or store per route
-                all_data.extend(scraped_data)
-
+            except TimeoutException:
+                logging.warning(f"Failed to load page for {hash_url}")
             except Exception as scrape_err:
-                print(f"⚠️ Failed to scrape {hash_url}: {scrape_err}")
+                logging.error(f"Failed to scrape {hash_url}: {scrape_err}")
 
-        # Save final combined results
-        save_results(all_data)
+        save_results(all_data, output_file)
 
     except Exception as e:
-        print(f"❌ Critical error occurred: {e}")
+        logging.critical(f"A critical error occurred: {e}")
 
     finally:
         driver.quit()
-        print("✅ Scraper finished and browser closed.")
+        logging.info("✅ Scraper finished and browser closed.")
+
+
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Scrape status data from a web page.")
+    parser.add_argument("-o", "--output", help=f"Output file name (default: {Config.OUTPUT_FILE})")
+    args = parser.parse_args()
+    
+    main(output_file=args.output)
