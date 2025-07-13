@@ -7,7 +7,7 @@ def merge_json_data():
     result to en_filled.json.
     """
     try:
-        with open('C:\\Home\\workplace\\python\\angular-selenium-scraper\\EN.json', 'r', encoding='utf-8') as f:
+        with open('.\EN.json', 'r', encoding='utf-8') as f:
             en_data = json.load(f)
     except FileNotFoundError:
         print("Error: EN.json not found.")
@@ -17,7 +17,7 @@ def merge_json_data():
         return
 
     try:
-        with open('C:\\Home\\workplace\\python\\angular-selenium-scraper\\status_data.json', 'r', encoding='utf-8') as f:
+        with open('.\status_data.json', 'r', encoding='utf-8') as f:
             status_data = json.load(f)
     except FileNotFoundError:
         print("Error: status_data.json not found.")
@@ -32,10 +32,10 @@ def merge_json_data():
         matched_value = None
 
         if en_name:
-            # Find the best (longest) matching label from status_data
+            # Find the best (longest) matching name from status_data
             best_match_len = 0
             for status_item in status_data:
-                status_label = status_item.get('label')
+                status_label = status_item.get('name')
                 if status_label and status_label.lower() in en_name.lower():
                     if len(status_label) > best_match_len:
                         best_match_len = len(status_label)
@@ -45,7 +45,7 @@ def merge_json_data():
 
     # Write the updated data to a new file
     try:
-        with open('C:\\Home\\workplace\\python\\angular-selenium-scraper\\en_filled.json', 'w', encoding='utf-8') as f:
+        with open('.\en_filled.json', 'w', encoding='utf-8') as f:
             json.dump(en_data, f, indent=4)
         print("Successfully merged data and created en_filled.json.")
     except IOError as e:

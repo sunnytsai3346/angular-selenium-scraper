@@ -20,7 +20,8 @@ class Config:
         '#/status/System', '#/status/Lamp', '#/status/Lens',
         '#/status/Network', '#/status/Interlocks', '#/status/Serial',
         '#/status/Video', '#/status/Playback', '#/status/Scheduler',
-        '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging'
+        '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
+        '#/menu/MMM%2BABOT'
     ]
     OUTPUT_FILE = "status_data.json"
     CHROME_DRIVER_PATH = './chromedriver.exe'
@@ -85,7 +86,7 @@ def scrape_page(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     items = []
     strategies = [
         (By.CLASS_NAME, "status-item-label", By.CLASS_NAME, "status-item-value"),
-        (By.ID, "info-name", By.ID, "info-value")
+        (By.CSS_SELECTOR, "span#info-name", By.CSS_SELECTOR, "span#info-value")
     ]
 
     for label_by, label_locator, value_by, value_locator in strategies:

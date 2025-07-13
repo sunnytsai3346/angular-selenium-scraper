@@ -15,7 +15,7 @@
         "name": "Model",
         "url": "/#/menu/MMM%2BABOT",
         "userLevel": "20",
-        "value": null
+        "value": "CP4450-RGB"
     },
     {
         "name": "Model Sub Type",
@@ -27,13 +27,13 @@
         "name": "Projector Serial",
         "url": "/#/menu/MMM%2BABOT",
         "userLevel": "20",
-        "value": null
+        "value": "Jay28"
     },
     {
         "name": "Installed Lens",
         "url": "/#/menu/MMM%2BABOT",
         "userLevel": "20",
-        "value": null
+        "value": "Generic Zoom"
     },
     {
         "name": "Installed Lamp",
@@ -999,7 +999,7 @@
         "name": "Model",
         "url": "/#/menu/MMM%2BLASR/MMM%2BLDGS",
         "userLevel": "40",
-        "value": null
+        "value": "CP4450-RGB"
     },
     {
         "name": "Version",
@@ -1815,7 +1815,7 @@
         "name": "Time Format",
         "url": "/#/menu/MMM%2BSERV/MMM%2BPREF/General",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Temperature Units",
@@ -1851,7 +1851,7 @@
         "name": "Session Timeout",
         "url": "/#/menu/MMM%2BSERV/MMM%2BPREF/General",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "HDR",
@@ -2247,7 +2247,7 @@
         "name": "IMB SM Time Adjust",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME/imbadjust",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "SNMP Settings",
@@ -2625,7 +2625,7 @@
         "name": "Dark Time",
         "url": "/#/menu/MMM%2BIMGS/MMM%2BTHRD",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Output Delay",
@@ -2667,7 +2667,7 @@
         "name": "Time Setup",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "NTP Server Address",
@@ -2709,7 +2709,7 @@
         "name": "Date and Time",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Minutes",
@@ -2745,7 +2745,7 @@
         "name": "IMB Time",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Current UTC date:",
@@ -2757,13 +2757,13 @@
         "name": "Current UTC time:",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "3/8/2025, 8:21:47 PM"
+        "value": "3/10/2025, 1:29:19 PM"
     },
     {
         "name": "Projector Time Settings",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "User Accounts",
@@ -2973,7 +2973,7 @@
         "name": "Total Time: %L1",
         "url": "/#/menu/MMM%2BPLAY",
         "userLevel": "30",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Automation",
@@ -3261,13 +3261,13 @@
         "name": "EDR System Time",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "EDR FPGA Time Stamp",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "EDR Video Format",
@@ -3321,7 +3321,7 @@
         "name": "EDR Update Install Time",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Pipeline Mode",
@@ -4041,7 +4041,7 @@
         "name": "CAVE Blower 102",
         "url": "/#/status/Fans",
         "userLevel": "20",
-        "value": "2940 RPM"
+        "value": "3000 RPM"
     },
     {
         "name": "Card Cage Exhaust 10",
@@ -4545,7 +4545,7 @@
         "name": "Third Party Laser Model",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": null
+        "value": "CP4450-RGB"
     },
     {
         "name": "Third Party Laser Serial Number",
@@ -5229,7 +5229,7 @@
         "name": "Lens Serial Number",
         "url": "/#/status/Lens",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": ""
     },
     {
         "name": "Generic Zoom",
@@ -5307,13 +5307,13 @@
         "name": "Atmos Input IP",
         "url": "/#/status/Network",
         "userLevel": "20",
-        "value": null
+        "value": ""
     },
     {
         "name": "Atmos Control IP",
         "url": "/#/status/Network",
         "userLevel": "20",
-        "value": null
+        "value": ""
     },
     {
         "name": "Atmos Enabled",
@@ -5709,7 +5709,7 @@
         "name": "CSB Version",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": ""
     },
     {
         "name": "UCD Version",
@@ -5733,13 +5733,13 @@
         "name": "Photon Main Version",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": ""
     },
     {
         "name": "Photon Boot Version",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": ""
     },
     {
         "name": "Light Source Shut Off Due to Component Over Temp",
@@ -5799,7 +5799,7 @@
         "name": "Playback Composition Name",
         "url": "/#/status/Playback",
         "userLevel": "20",
-        "value": null
+        "value": ""
     },
     {
         "name": "Playback Composition ID",
@@ -5811,7 +5811,7 @@
         "name": "Playback Time Code",
         "url": "/#/status/Playback",
         "userLevel": "20",
-        "value": "2025-7-11 10:34:37 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
     },
     {
         "name": "Playback Duration",
@@ -5865,7 +5865,7 @@
         "name": "Playlist Entry Name",
         "url": "/#/status/Playback",
         "userLevel": "20",
-        "value": null
+        "value": ""
     },
     {
         "name": "Playlist Entry Offset",
@@ -6051,7 +6051,7 @@
         "name": "Scheduler Next Show ID",
         "url": "/#/status/Scheduler",
         "userLevel": "20",
-        "value": "511942e8-b332-48b7-b97f-a98107506c70"
+        "value": "07d8e22c-b352-4adc-be36-d03354f5f587"
     },
     {
         "name": "Scheduler Next Show Name",
@@ -6063,7 +6063,7 @@
         "name": "Scheduler Next Show Time",
         "url": "/#/status/Scheduler",
         "userLevel": "20",
-        "value": "3/9/2025, 1:55:00 AM"
+        "value": "3/11/2025, 1:55:00 AM"
     },
     {
         "name": "Security",
@@ -6507,25 +6507,25 @@
         "name": "SM UTC Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "7/11/2025, 7:22:00 PM"
+        "value": "7/13/2025, 12:29:34 PM"
     },
     {
         "name": "UTC Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "3/8/2025, 8:21:47 PM"
+        "value": "3/10/2025, 1:29:19 PM"
     },
     {
         "name": "Local Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "3/8/2025, 3:21:47 PM"
+        "value": "3/10/2025, 9:29:19 AM"
     },
     {
         "name": "Local Time Offset",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "-05:00:00"
+        "value": "-04:00:00"
     },
     {
         "name": "Total Memory",
@@ -6537,13 +6537,13 @@
         "name": "Free Memory",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "2.92 GB"
+        "value": "2.69 GB"
     },
     {
         "name": "Average CPU Usage",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "12"
+        "value": "13"
     },
     {
         "name": "Root Total Disk Space",
@@ -6687,7 +6687,7 @@
         "name": "System Hours",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "42665"
+        "value": "42706"
     },
     {
         "name": "Light On Hours",
@@ -7209,7 +7209,7 @@
         "name": "System Up Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "0:04:12:59"
+        "value": "1:21:20:17"
     },
     {
         "name": "Laser Power Supply State",
@@ -7257,13 +7257,13 @@
         "name": "Scheduled IMB SM Self Test",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "2025-07-18 15:09:21"
+        "value": "2025-07-18 15:09:24"
     },
     {
         "name": "IMB Data Partition Free Disk Space",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "8.59 GB"
+        "value": "8.60 GB"
     },
     {
         "name": "IMB Data Partition Total Disk Space",
@@ -7311,7 +7311,7 @@
         "name": "Content Validation Content ID",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": null
+        "value": ""
     },
     {
         "name": "SubModel Number",
@@ -7701,7 +7701,7 @@
         "name": "CAVE",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "36\u2103"
+        "value": "37\u2103"
     },
     {
         "name": "CAVE FPGA",
@@ -8115,7 +8115,7 @@
         "name": "IMB Software Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": "1.3.0-10129@FC5"
     },
     {
         "name": "CFB Red (Rev.Mod)",
