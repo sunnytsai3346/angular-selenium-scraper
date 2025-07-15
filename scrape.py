@@ -5,7 +5,6 @@ from typing import List, Dict, Optional
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -24,7 +23,6 @@ class Config:
         '#/menu/MMM%2BABOT'
     ]
     OUTPUT_FILE = "status_data.json"
-    CHROME_DRIVER_PATH = './chromedriver.exe'
     WAIT_TIMEOUT = 10
     POLL_FREQUENCY = 0.5
     USERNAME = "service"
@@ -37,15 +35,16 @@ def setup_logging():
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def setup_driver() -> webdriver.Chrome:
+def setup_driver(headless: bool = False) -> webdriver.Chrome:
     """Sets up and returns a Chrome WebDriver instance."""
-    service = Service(Config.CHROME_DRIVER_PATH)
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
+    if headless:
+        options.add_argument("--headless")
+        options.add_argument("--window-size=1920,1080")
     prefs = {"profile.default_content_setting_values.media_stream_mic": 2}
     options.add_experimental_option("prefs", prefs)
-    # options.add_argument("--headless")
-    return webdriver.Chrome(service=service, options=options)
+    return webdriver.Chrome(options=options)
 
 
 def login(driver: webdriver.Chrome):
@@ -153,12 +152,12 @@ def save_results(results: List[Dict[str, str]], output_file: str):
         logging.error(f"Error saving data to {output_file}: {e}")
 
 
-def main(output_file: Optional[str] = None):
+def main(output_file: Optional[str] = None, headless: bool = False):
     """Main function to run the scraper."""
     setup_logging()
     output_file = output_file or Config.OUTPUT_FILE
     
-    driver = setup_driver()
+    driver = setup_driver(headless=headless)
     all_data = []
     try:
         driver.get(Config.BASE_URL)
@@ -198,6 +197,8 @@ def main(output_file: Optional[str] = None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scrape status data from a web page.")
     parser.add_argument("-o", "--output", help=f"Output file name (default: {Config.OUTPUT_FILE})")
+    parser.add_argument("--headless", action="store_true", help="Run Chrome in headless mode.")
     args = parser.parse_args()
     
-    main(output_file=args.output)
+    main(output_file=args.output, headless=args.headless)
+
