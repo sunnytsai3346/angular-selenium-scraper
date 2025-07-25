@@ -13,17 +13,17 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 # --- Configuration ---
 class Config:
     """Configuration class for the scraper."""
-    BASE_URL = "http://localhost:4200/"
+    BASE_URL = "http://192.168.230.169/"
     SCRAPE_URLS = [
+        '#/menu/MMM%2BABOT',
         '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
         '#/status/System', '#/status/Lamp', '#/status/Lens',
         '#/status/Network', '#/status/Interlocks', '#/status/Serial',
         '#/status/Video', '#/status/Playback', '#/status/Scheduler',
         '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
-        '#/menu/MMM%2BABOT'
     ]
     OUTPUT_FILE = "status_data.json"
-    WAIT_TIMEOUT = 10
+    WAIT_TIMEOUT = 20
     POLL_FREQUENCY = 0.5
     USERNAME = "service"
     PASSWORD = "service"
@@ -70,6 +70,16 @@ def login(driver: webdriver.Chrome):
             EC.url_contains("dashboard"))
         logging.info("Login successful.")
 
+        # Click Acknowledge button if it appears
+        try:
+            acknowledge_button = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'Acknowledge')]"))
+            )
+            acknowledge_button.click()
+            logging.info("Clicked 'Acknowledge' button to close dialog.")
+        except TimeoutException:
+            logging.info("'Acknowledge' button not found, continuing.")
+
     except TimeoutException:
         logging.error("Login elements not found or login failed.")
         raise
@@ -81,6 +91,7 @@ def login(driver: webdriver.Chrome):
 def scrape_page(driver: webdriver.Chrome) -> List[Dict[str, str]]:
     """
     Scrapes status items from the current page using different strategies.
+    Handles stale element references by re-fetching elements.
     """
     items = []
     strategies = [
@@ -94,18 +105,33 @@ def scrape_page(driver: webdriver.Chrome) -> List[Dict[str, str]]:
             WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
                 EC.presence_of_element_located((label_by, label_locator))
             )
-            labels = driver.find_elements(label_by, label_locator)
-            values = driver.find_elements(value_by, value_locator)
+            
+            # Get the initial count of labels
+            num_labels = len(driver.find_elements(label_by, label_locator))
+            if num_labels == 0:
+                continue
 
-            if labels and values:
-                logging.info(f"Scraping using {label_by.upper()}: {label_locator}")
-                for label_el, value_el in zip(labels, values):
-                    items.append({
-                        "name": label_el.text.strip(),
-                        "value": value_el.text.strip()
-                    })
-                # If we found items with this strategy, we can break
+            logging.info(f"Scraping {num_labels} items using {label_by.upper()}: {label_locator}")
+            
+            for i in range(num_labels):
+                try:
+                    # Re-find the elements in each iteration to avoid stale references
+                    labels = driver.find_elements(label_by, label_locator)
+                    values = driver.find_elements(value_by, value_locator)
+                    
+                    if i < len(labels) and i < len(values):
+                        items.append({
+                            "name": labels[i].text.strip(),
+                            "value": values[i].text.strip()
+                        })
+                except NoSuchElementException:
+                    logging.warning(f"Could not find element at index {i}, page might have changed.")
+                    continue # Skip to the next item
+            
+            # If we found items with this strategy, we can break
+            if items:
                 return items
+                
         except TimeoutException:
             # This strategy didn't find any elements, try the next one
             continue
@@ -138,10 +164,14 @@ def save_results(results: List[Dict[str, str]], output_file: str):
         if not name:
             continue
             
+        relative_url = name_to_url.get(name)
+        # Prepend BASE_URL if a relative URL exists
+        full_url = f"{Config.BASE_URL.rstrip('/')}/{relative_url.lstrip('/')}" if relative_url else None
+
         structured_results.append({
             "name": name,
             "value": item.get("value", "").strip(),
-            "url": name_to_url.get(name)  # Get URL from map, defaults to None (null in JSON)
+            "url": full_url
         })
 
     try:

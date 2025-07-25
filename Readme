@@ -3,4 +3,5 @@ Go to https://chromedriver.chromium.org/downloads
 Download the version matching your installed Chrome.
 
 Unzip and place the chromedriver or chromedriver.exe in your project folder or in your system PATH.
+1. py scrape.py
 

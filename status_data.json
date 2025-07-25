@@ -1,108 +1,143 @@
 [
   {
+    "name": "Model",
+    "value": "CP4450-RGB",
+    "url": "http://192.168.230.169/#/menu/MMM%2BLASR/MMM%2BLDGS"
+  },
+  {
+    "name": "Model Sub Type",
+    "value": "A",
+    "url": "http://192.168.230.169/#/status/System"
+  },
+  {
+    "name": "Projector Serial",
+    "value": "Jay28",
+    "url": "http://192.168.230.169/#/menu/MMM%2BABOT"
+  },
+  {
+    "name": "IMB SM ESN",
+    "value": "1040E717F64A",
+    "url": null
+  },
+  {
+    "name": "Installed Lens",
+    "value": "Generic Zoom",
+    "url": "http://192.168.230.169/#/menu/MMM%2BABOT"
+  },
+  {
+    "name": "Main System Version",
+    "value": "102.5.0-7",
+    "url": "http://192.168.230.169/#/menu/MMM%2BABOT"
+  },
+  {
+    "name": "IMB Software Version",
+    "value": "1.3.0-10129@FC5",
+    "url": "http://192.168.230.169/#/status/Versions"
+  },
+  {
     "name": "Main System",
-    "value": "202.6.0-2390",
-    "url": "/#/status/Versions"
+    "value": "102.5.0-7",
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "IMB-S4 Software Version",
     "value": "1.3.0-10129@FC5",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "Core Software",
-    "value": "cave root 2025-07-08.193627",
-    "url": "/#/status/Versions"
+    "value": "cave root 2025-07-15.130022",
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "IMB-S4 FPGA Version",
     "value": "2.0.21824",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "HKB FPGA",
     "value": "1.0.21931",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "HKB Hardware",
     "value": "4.4.2 (M.P.R)",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "Version Mismatch",
     "value": "False",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "VOM Hardware",
     "value": "VOMCI.2.0",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "CAVE Hardware",
     "value": "CAVE.3.0",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "BIOS",
     "value": "00.28t2",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "IMB-S4 Board Revision",
     "value": "1.2.0",
-    "url": "/#/status/Versions"
+    "url": "http://192.168.230.169/#/status/Versions"
   },
   {
     "name": "Photon Main Version",
     "value": "",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Photon Boot Version",
     "value": "",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "CSB Version",
     "value": "",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "UCD Version",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Card Cage Intake 101",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "CAVE Blower 102",
-    "value": "3000 RPM",
-    "url": "/#/status/Fans"
+    "value": "2940 RPM",
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "Card Cage Exhaust 103",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "Blue Formatter 3",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "Green Formatter 4",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "Red Formatter 5",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LDCC B 46",
@@ -127,32 +162,32 @@
   {
     "name": "LE Intake 25",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LE Intake 26",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LE Intake 27",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LE Intake 28",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LE Intake 29",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LE Intake 30",
     "value": "0 RPM",
-    "url": "/#/status/Fans"
+    "url": "http://192.168.230.169/#/status/Fans"
   },
   {
     "name": "LDCC A 21",
@@ -177,86 +212,86 @@
   {
     "name": "Diffuser",
     "value": "0 RPM",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Red DMD",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Blue DMD",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Green DMD",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Ambient",
     "value": "OPEN",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Red Formatter",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Green Formatter",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Blue Formatter",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "CAVE",
-    "value": "37℃",
-    "url": "/#/status/Temperatures"
+    "value": "36℃",
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "CAVE FPGA",
-    "value": "51℃",
-    "url": "/#/status/Temperatures"
+    "value": "50℃",
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Image Processor Scaler",
     "value": "48℃",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "VOM FPGA",
     "value": "37℃",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "DMD Waterblock",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Liquid Cooling Manifold",
-    "value": "24.06℃",
-    "url": "/#/status/Temperatures"
+    "value": "25.63℃",
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "LiteLOC™ Max Ambient Temperature",
     "value": "35℃",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "IMB-S4 FPGA",
-    "value": "39.07℃",
+    "value": "38.21℃",
     "url": null
   },
   {
     "name": "IMB-S4 U55",
-    "value": "33℃",
+    "value": "32℃",
     "url": null
   },
   {
@@ -272,187 +307,187 @@
   {
     "name": "CSB Temperature",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Laser CPU Temperature",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller Setpoint Temperature",
     "value": "24℃",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Chiller Water Temperature",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Chiller Ambient Temperature",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Ambient Dewpoint",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "LOS1 Dewpoint",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "LOS2 Dewpoint",
     "value": "N/A",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Serial Number",
     "value": "Jay28",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Model Number",
     "value": "CP4450-RGB",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Build Date",
     "value": "2000-01-08",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Electronic Serial Number",
     "value": "C113123C7528",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "NTP Enabled",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "DST Enabled",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Time Zone",
     "value": "Eastern (Toronto)",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "UTC Time",
-    "value": "3/10/2025, 1:29:19 PM",
-    "url": "/#/status/System"
+    "value": "7/25/2025, 8:05:05 PM",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Local Time",
-    "value": "3/10/2025, 9:29:19 AM",
-    "url": "/#/status/System"
+    "value": "7/25/2025, 4:05:05 PM",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "SM UTC Time",
-    "value": "7/13/2025, 12:29:34 PM",
-    "url": "/#/status/System"
+    "value": "7/25/2025, 8:05:12 PM",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Local Time Offset",
     "value": "-04:00:00",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Total Memory",
     "value": "3.70 GB",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Free Memory",
-    "value": "2.69 GB",
-    "url": "/#/status/System"
+    "value": "2.99 GB",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Average CPU Usage",
-    "value": "13",
-    "url": "/#/status/System"
+    "value": "11",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Root Total Disk Space",
     "value": "4.47 GB",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Root Free Disk Space",
-    "value": "1.74 GB",
-    "url": "/#/status/System"
+    "value": "1.43 GB",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Number of Content Drives",
-    "value": "2",
-    "url": "/#/status/System"
+    "value": "3",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Number of Ingest Drives",
-    "value": "5",
-    "url": "/#/status/System"
+    "value": "23",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Last Upgrade Result",
     "value": "Success",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Data Partition Free Disk Space",
-    "value": "8.60 GB",
-    "url": "/#/status/System"
+    "value": "8.59 GB",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Data Partition Total Disk Space",
     "value": "9.40 GB",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Content Validation Percent",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Content Validation State",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Content Validation Content ID",
     "value": "",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Model Sub Type",
     "value": "A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "SID Health",
     "value": "Online",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Laser Power Supply State",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "HKB Online",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "CSB Online",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Online",
@@ -462,392 +497,392 @@
   {
     "name": "Selected IMB Type",
     "value": "Christie Series 4 IMB",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Status",
     "value": "OK",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Douser Open",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Douser Sensor Error",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Startup Components Ready",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Projector Healthy",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Current",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Voltage",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Over Temperature",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Over Current",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Over Voltage",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Fan Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Unit Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 High Temp",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Very Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Current",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Voltage",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Over Temperature",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Over Current",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Over Voltage",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Fan Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Unit Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 High Temp",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Very Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Current",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Voltage",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Over Temperature",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Over Current",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Over Voltage",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Fan Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Unit Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 High Temp",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Very Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Current",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Voltage",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Over Temperature",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Over Current",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Over Voltage",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Fan Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Unit Failure",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 High Temp",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Very Low AC",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Communication Failure",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Communication Failure",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Communication Failure",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Communication Failure",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A1 Temperature",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS A2 Temperature",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B1 Temperature",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LVPS B2 Temperature",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "RealD 3D EQ Enabled",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "System Hours",
-    "value": "42706",
-    "url": "/#/status/System"
+    "value": "43000",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Light On Hours",
     "value": "68",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LOS 1 Laser On Hours",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LOS 1 Standby Hours",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LOS 2 Laser On Hours",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "LOS 2 Standby Hours",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Multi Projector Secondary Offline",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Incomplete or Corrupted Content Detected",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "CAVE State",
     "value": "OK",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "VOM State",
     "value": "OK",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Videopath Communication Online",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Scheduled IMB SM Self Test",
-    "value": "2025-07-18 15:09:24",
-    "url": "/#/status/System"
+    "value": "2025-07-31 18:40:49",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "FM Location ID",
     "value": "819200",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Electronics Initialization Fault",
     "value": "False",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "System Up Time",
-    "value": "1:21:20:17",
-    "url": "/#/status/System"
+    "value": "1:01:24:40",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Onboard Storage Type",
     "value": "1.2",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB RAID Overall Status",
     "value": "Clean",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB RAID Disk 1 Status",
     "value": "Clean",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB RAID Disk 2 Status",
     "value": "Clean",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB RAID Disk 3 Status",
     "value": "Clean",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "ALT Audio Present",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Number of ALT Audio Channels",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "ALT Audio Sample Rate Hz",
     "value": "0",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Battery 1",
@@ -862,7 +897,7 @@
   {
     "name": "IMB Media Player Online",
     "value": "True",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "IMB Audio Test Signal Enabled",
@@ -871,13 +906,13 @@
   },
   {
     "name": "Primary Storage Device",
-    "value": "Christie-Nas",
+    "value": "ChristieNas",
     "url": null
   },
   {
     "name": "Primary Drive Online",
-    "value": "True",
-    "url": "/#/status/System"
+    "value": "False",
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Onboard Storage Online",
@@ -891,32 +926,32 @@
   },
   {
     "name": "Onboard Storage Free Disk Space",
-    "value": "1.65 TB",
+    "value": "1.55 TB",
     "url": null
   },
   {
     "name": "Onboard Storage Used Disk Space",
-    "value": "31.54 GB",
+    "value": "138.23 GB",
     "url": null
   },
   {
     "name": "NAS Online",
-    "value": "True",
+    "value": "False",
     "url": null
   },
   {
     "name": "NAS Total Disk Space",
-    "value": "2.62 TB",
+    "value": "N/A",
     "url": null
   },
   {
     "name": "NAS Free Disk Space",
-    "value": "2.61 TB",
+    "value": "N/A",
     "url": null
   },
   {
     "name": "NAS Used Disk Space",
-    "value": "17.59 GB",
+    "value": "N/A",
     "url": null
   },
   {
@@ -942,167 +977,167 @@
   {
     "name": "Light Source Shut Off Due to Component Over Temp",
     "value": "False",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "DMD Coolant Flow Good",
     "value": "True",
-    "url": "/#/status/Temperatures"
+    "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "Light Source Turned Off Due to Coolant Flow Error",
     "value": "False",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Light Source Shut Off Due to Diffuser Not Spinning",
     "value": "False",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Unexpected Light Source Off",
     "value": "0",
-    "url": "/#/status/Lamp"
+    "url": "http://192.168.230.169/#/status/Lamp"
   },
   {
     "name": "LiteLOC™ Target Reachable",
     "value": "N/A",
-    "url": "/#/status/Lamp"
+    "url": "http://192.168.230.169/#/status/Lamp"
   },
   {
     "name": "Light On Failure",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Ambient Relative Humidity",
     "value": "OPEN",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Laser Subsystem Connected",
     "value": "False",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Laser Main Code CRC",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Laser Power State",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Overall LOS Health",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "CSB DAC Calibration",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor(X)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor(Y)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor(Z)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor Gain(X)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor Gain(Y)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor Gain(Z)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "CSB Serial",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller State",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller Alarm Status",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller Flow Rate (LPM)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "System Dewpoints State",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller Manufacturer",
     "value": "Teyu",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "LiteLOC™ Sensor to Screen Calibration",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "LiteLOC™ LOS to Sensor Calibration",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Color Sensor Board (CSB) Type",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "ELD",
     "value": "Disabled",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Chiller Pressure (PSI)",
     "value": "N/A",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Service Mode Enabled",
     "value": "False",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "LOS1 Drive Limits",
     "value": "Disabled",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "LOS2 Drive Limits",
     "value": "Disabled",
-    "url": "/#/status/Laser"
+    "url": "http://192.168.230.169/#/status/Laser"
   },
   {
     "name": "Light Source Development Mode",
@@ -1112,567 +1147,567 @@
   {
     "name": "ILS Active File",
     "value": "ILS Flat",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS X Sensor",
     "value": "Failed",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS Y Sensor",
     "value": "Failed",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS Z Sensor",
     "value": "Failed",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS F Sensor",
     "value": "Failed",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS Disabled Keepout Motors",
     "value": "Vertical & Horizontal & Focus",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS Calibration",
     "value": "Horizontal & Vertical & Focus & Zoom",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "ILS Reset",
     "value": "Horizontal & Vertical & Focus",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "Lens Type",
     "value": "Generic Zoom",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "Lens Serial Number",
     "value": "",
-    "url": "/#/status/Lens"
+    "url": "http://192.168.230.169/#/status/Lens"
   },
   {
     "name": "Atmos Input IP",
     "value": "",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Atmos Control IP",
     "value": "",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Atmos Enabled",
     "value": "False",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Atmos Online",
     "value": "False",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management IP",
     "value": "192.168.230.169",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management Netmask",
     "value": "255.255.252.0",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management DHCP",
     "value": "False",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management MAC",
     "value": "80:1F:12:3C:75:28",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management IP Conflict",
     "value": "False",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Management Gateway",
     "value": "192.168.228.1",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS Status",
     "value": "Available",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS Link",
     "value": "Up",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS IP",
-    "value": "192.168.228.81",
-    "url": "/#/status/Network"
+    "value": "192.168.228.21",
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS Netmask",
     "value": "255.255.252.0",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS DHCP",
     "value": "True",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS Gateway",
     "value": "192.168.228.1",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network NAS MAC Address",
     "value": "fc:0f:e7:17:d8:46",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media Status",
     "value": "Available",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media Link",
     "value": "Up",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media IP",
     "value": "192.168.1.100",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media Netmask",
     "value": "255.255.255.0",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media DHCP",
     "value": "False",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media Gateway",
     "value": "N/A",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Media MAC Address",
     "value": "fc:0f:e7:17:f6:4a",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio Status",
     "value": "Available",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio Link",
     "value": "Down",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio IP",
     "value": "N/A",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio Netmask",
     "value": "N/A",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio DHCP",
     "value": "N/A",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio Gateway",
     "value": "N/A",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "IMB Network Aux Audio MAC Address",
     "value": "fc:0f:e7:18:19:97",
-    "url": "/#/status/Network"
+    "url": "http://192.168.230.169/#/status/Network"
   },
   {
     "name": "Local Fire Alarm",
     "value": "True",
-    "url": "/#/status/Lamp"
+    "url": "http://192.168.230.169/#/status/Lamp"
   },
   {
     "name": "Unexpected power off due to Fire Alarm",
     "value": "False",
-    "url": "/#/status/Lamp"
+    "url": "http://192.168.230.169/#/status/Lamp"
   },
   {
     "name": "HKB Serial Number",
     "value": "VS18172249520060",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Main Control Board",
     "value": "VM1912500569",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Formatter Red",
     "value": "N/A",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Formatter Green",
     "value": "N/A",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Formatter Blue",
     "value": "N/A",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Variable Option Module",
     "value": "VOM2",
-    "url": "/#/status/Serial"
+    "url": "http://192.168.230.169/#/status/Serial"
   },
   {
     "name": "Native Array Width",
     "value": "4096",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Native Array Height",
     "value": "2160",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Channel Active File",
     "value": "Media Block Scope",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Gamma Active File",
     "value": "Auto",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "MCGD Left Active File",
     "value": "2D-MultiProj",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "MCGD Right Active File",
     "value": "2D-MultiProj",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "TCGD Active File",
     "value": "DC28 DCI XYZE 314 351",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "3D Active File",
     "value": "Default",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Source Active File",
     "value": "Auto Square Pixels",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Screen Active File",
     "value": "4096x2160 No Crop",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "EDID Active File",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Christie Pureformity Color™ Correction File",
     "value": "Bypass",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Light Source Active File",
-    "value": "Default",
-    "url": "/#/status/Video"
+    "value": "*Default",
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "CLUT Active File",
     "value": "Linear 9x9x9",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "RealD 3D File",
     "value": "N/A",
-    "url": "/#/status/System"
+    "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "3D Sync Input Mode",
     "value": "Auto",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Color Space Active File",
     "value": "Auto",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Detected Input Video Pixel Width",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Detected Input Video Lines",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Detected Input Video Frame Rate",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Sub Image X",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Sub Image Y",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Sub Image Width",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Sub Image Height",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Output X Pos",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Output Y Pos",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Output Width",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Output Height",
     "value": "0",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Input",
     "value": "IMB",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Data Format",
     "value": "4:4:4 (RGB)",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Scan Type",
     "value": "Auto",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video 3D Mode",
     "value": "False",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Laser Calibration Active File",
     "value": "Default",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Video Output Frequency",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "HDMI Port 1 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "HDMI Port 2 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "IMB Video Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Display Port 1 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Display Port 2 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "SDI 1 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "SDI 2 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "SDI 3 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "SDI 4 Signal",
     "value": "N/A",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Warp File",
     "value": "Bypass.C4TW",
-    "url": "/#/status/Video"
+    "url": "http://192.168.230.169/#/status/Video"
   },
   {
     "name": "Playback Secondary Mode",
     "value": "0",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback Composition Name",
     "value": "",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Video Buffer Full Percent",
     "value": "0",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Audio Buffer Full Percent",
     "value": "0",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback Loop Mode",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Audio Delay MS",
     "value": "0",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Audio Sample Rate",
     "value": "0kHz",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Audio Output Rate",
     "value": "48kHz",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playlist Entry Name",
     "value": "",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Intermission Active",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback 3D Content",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback 3D Playlist",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback Power Loss Auto Recovery",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Dolby Atmos Online",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback load error; Remote content missing",
     "value": "N/A",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback load error content missing",
     "value": "N/A",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback Buffer Underrun",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback Content Error",
     "value": "False",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Subtitles Enabled",
     "value": "True",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Subtitles Time Code",
     "value": "00:00:00.000",
-    "url": "/#/status/Playback"
+    "url": "http://192.168.230.169/#/status/Playback"
   },
   {
     "name": "Playback general play error",
@@ -1682,431 +1717,51 @@
   {
     "name": "Scheduler Enabled",
     "value": "True",
-    "url": "/#/status/Scheduler"
+    "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Scheduler Next Show ID",
-    "value": "07d8e22c-b352-4adc-be36-d03354f5f587",
-    "url": "/#/status/Scheduler"
+    "value": "9bb15143-0a0b-4110-a5dd-682be2278524",
+    "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Scheduler Next Show Name",
-    "value": "01_3D_CACTUS_RIGHT_TST_F_EN-XX_UK_4K_20140905_ONS_OV",
-    "url": "/#/status/Scheduler"
+    "value": "Christie NAS List",
+    "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Scheduler Next Show Time",
-    "value": "3/11/2025, 1:55:00 AM",
-    "url": "/#/status/Scheduler"
+    "value": "7/26/2025, 10:00:00 AM",
+    "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Automation Enabled",
     "value": "True",
-    "url": "/#/status/Automation"
+    "url": "http://192.168.230.169/#/status/Automation"
   },
   {
     "name": "Macro Health",
     "value": "OK",
-    "url": "/#/status/Automation"
+    "url": "http://192.168.230.169/#/status/Automation"
   },
   {
     "name": "Automation Devices Online",
     "value": "True",
-    "url": "/#/status/Automation"
+    "url": "http://192.168.230.169/#/status/Automation"
   },
   {
     "name": "Last Macro Complete",
     "value": "FIRE_ALARM$FIRE_ALARM",
-    "url": "/#/status/Automation"
+    "url": "http://192.168.230.169/#/status/Automation"
   },
   {
     "name": "Last Before Clip Macro Complete",
     "value": "N/A",
-    "url": "/#/status/Automation"
+    "url": "http://192.168.230.169/#/status/Automation"
   },
   {
     "name": "Christie NAS Attached",
-    "value": "True",
-    "url": null
-  },
-  {
-    "name": "Model Name",
-    "value": "NAS-S2",
-    "url": null
-  },
-  {
-    "name": "Version",
-    "value": "4.3.3",
-    "url": "/#/menu/MMM%2BLASR/MMM%2BLDGS"
-  },
-  {
-    "name": "Time",
-    "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
-    "url": null
-  },
-  {
-    "name": "CPU Usage",
-    "value": "0.4 %",
-    "url": null
-  },
-  {
-    "name": "CPU Temperature in Celsius",
-    "value": "39",
-    "url": null
-  },
-  {
-    "name": "Total Memory",
-    "value": "984.8",
-    "url": "/#/status/System"
-  },
-  {
-    "name": "Free Memory",
-    "value": "515.4",
-    "url": "/#/status/System"
-  },
-  {
-    "name": "Serial Number",
-    "value": "Q15CI11623",
-    "url": "/#/status/System"
-  },
-  {
-    "name": "Uptime in Hours",
-    "value": "1106",
-    "url": null
-  },
-  {
-    "name": "Standby Enabled",
     "value": "False",
     "url": null
-  },
-  {
-    "name": "Standby Time Interval",
-    "value": "30",
-    "url": null
-  },
-  {
-    "name": "Eth1 Address",
-    "value": "192.168.1.101",
-    "url": null
-  },
-  {
-    "name": "Eth1 MAC Address",
-    "value": "00:08:9b:f7:da:9a",
-    "url": null
-  },
-  {
-    "name": "Eth1 Setup",
-    "value": "STATIC",
-    "url": null
-  },
-  {
-    "name": "Eth2 Address",
-    "value": "0.0.0.0",
-    "url": null
-  },
-  {
-    "name": "Eth2 MAC Address",
-    "value": "00:08:9b:f7:da:9b",
-    "url": null
-  },
-  {
-    "name": "Eth2 Setup",
-    "value": "STATIC",
-    "url": null
-  },
-  {
-    "name": "NFS Enabled",
-    "value": "True",
-    "url": null
-  },
-  {
-    "name": "FTP Enabled",
-    "value": "False",
-    "url": null
-  },
-  {
-    "name": "rsync Enabled",
-    "value": "False",
-    "url": null
-  },
-  {
-    "name": "RTRR Enabled",
-    "value": "False",
-    "url": null
-  },
-  {
-    "name": "Volume 1 Label",
-    "value": "DataVol1",
-    "url": null
-  },
-  {
-    "name": "Volume 1 Status",
-    "value": "Ready",
-    "url": null
-  },
-  {
-    "name": "Volume 2 Label",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "Volume 2 Status",
-    "value": "Not Present",
-    "url": null
-  },
-  {
-    "name": "Volume 3 Label",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "Volume 3 Status",
-    "value": "Not Present",
-    "url": null
-  },
-  {
-    "name": "Volume 4 Label",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "Volume 4 Status",
-    "value": "Not Present",
-    "url": null
-  },
-  {
-    "name": "HD1 Exists",
-    "value": "Yes",
-    "url": null
-  },
-  {
-    "name": "HD1 Vendor",
-    "value": "Seagate ST1000NM0033-9ZM173 SN04",
-    "url": null
-  },
-  {
-    "name": "HD1 Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD1 I/O Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD1 SMART Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD1 Temperature Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD1 Overall Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD1 Last Test Type",
-    "value": "No Last Test",
-    "url": null
-  },
-  {
-    "name": "HD1 Last Test Status",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "HD1 Last Test Time",
-    "value": "Thu Jan 1 01:00:00 1970",
-    "url": null
-  },
-  {
-    "name": "HD2 Exists",
-    "value": "Yes",
-    "url": null
-  },
-  {
-    "name": "HD2 Vendor",
-    "value": "Seagate ST1000NM0033-9ZM173 SN04",
-    "url": null
-  },
-  {
-    "name": "HD2 Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD2 I/O Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD2 SMART Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD2 Temperature Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD2 Overall Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD2 Last Test Type",
-    "value": "No Last Test",
-    "url": null
-  },
-  {
-    "name": "HD2 Last Test Status",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "HD2 Last Test Time",
-    "value": "Thu Jan 1 01:00:00 1970",
-    "url": null
-  },
-  {
-    "name": "HD3 Exists",
-    "value": "Yes",
-    "url": null
-  },
-  {
-    "name": "HD3 Vendor",
-    "value": "Seagate ST1000NM0033-9ZM173 SN04",
-    "url": null
-  },
-  {
-    "name": "HD3 Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD3 I/O Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD3 SMART Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD3 Temperature Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD3 Overall Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD3 Last Test Type",
-    "value": "No Last Test",
-    "url": null
-  },
-  {
-    "name": "HD3 Last Test Status",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "HD3 Last Test Time",
-    "value": "Thu Jan 1 01:00:00 1970",
-    "url": null
-  },
-  {
-    "name": "HD4 Exists",
-    "value": "Yes",
-    "url": null
-  },
-  {
-    "name": "HD4 Vendor",
-    "value": "Seagate ST1000NM0033-9ZM173 SN04",
-    "url": null
-  },
-  {
-    "name": "HD4 Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD4 I/O Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD4 SMART Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD4 Temperature Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD4 Overall Health",
-    "value": "OK",
-    "url": null
-  },
-  {
-    "name": "HD4 Last Test Type",
-    "value": "No Last Test",
-    "url": null
-  },
-  {
-    "name": "HD4 Last Test Status",
-    "value": "N/A",
-    "url": null
-  },
-  {
-    "name": "HD4 Last Test Time",
-    "value": "Thu Jan 1 01:00:00 1970",
-    "url": null
-  },
-  {
-    "name": "Model",
-    "value": "CP4450-RGB",
-    "url": "/#/menu/MMM%2BLASR/MMM%2BLDGS"
-  },
-  {
-    "name": "Model Sub Type",
-    "value": "A",
-    "url": "/#/status/System"
-  },
-  {
-    "name": "Projector Serial",
-    "value": "Jay28",
-    "url": "/#/menu/MMM%2BABOT"
-  },
-  {
-    "name": "IMB SM ESN",
-    "value": "1040E717F64A",
-    "url": null
-  },
-  {
-    "name": "Installed Lens",
-    "value": "Generic Zoom",
-    "url": "/#/menu/MMM%2BABOT"
-  },
-  {
-    "name": "Main System Version",
-    "value": "202.6.0-2390",
-    "url": "/#/menu/MMM%2BABOT"
-  },
-  {
-    "name": "IMB Software Version",
-    "value": "1.3.0-10129@FC5",
-    "url": "/#/status/Versions"
   }
 ]
