@@ -251,12 +251,12 @@
   },
   {
     "name": "CAVE",
-    "value": "36℃",
+    "value": "37℃",
     "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
     "name": "CAVE FPGA",
-    "value": "50℃",
+    "value": "53℃",
     "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "name": "VOM FPGA",
-    "value": "37℃",
+    "value": "38℃",
     "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "name": "Liquid Cooling Manifold",
-    "value": "25.63℃",
+    "value": "24.94℃",
     "url": "http://192.168.230.169/#/status/Temperatures"
   },
   {
@@ -286,22 +286,22 @@
   },
   {
     "name": "IMB-S4 FPGA",
-    "value": "38.21℃",
+    "value": "39.68℃",
     "url": null
   },
   {
     "name": "IMB-S4 U55",
-    "value": "32℃",
+    "value": "33℃",
     "url": null
   },
   {
     "name": "IMB-S4 Q8",
-    "value": "30℃",
+    "value": "31℃",
     "url": null
   },
   {
     "name": "IMB-S4 Q9",
-    "value": "29℃",
+    "value": "30℃",
     "url": null
   },
   {
@@ -381,17 +381,17 @@
   },
   {
     "name": "UTC Time",
-    "value": "7/25/2025, 8:05:05 PM",
+    "value": "7/29/2025, 2:07:08 PM",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Local Time",
-    "value": "7/25/2025, 4:05:05 PM",
+    "value": "7/29/2025, 10:07:08 AM",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "SM UTC Time",
-    "value": "7/25/2025, 8:05:12 PM",
+    "value": "7/29/2025, 2:07:16 PM",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -406,12 +406,12 @@
   },
   {
     "name": "Free Memory",
-    "value": "2.99 GB",
+    "value": "3.09 GB",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Average CPU Usage",
-    "value": "11",
+    "value": "15",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -421,17 +421,17 @@
   },
   {
     "name": "Root Free Disk Space",
-    "value": "1.43 GB",
+    "value": "1.42 GB",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Number of Content Drives",
-    "value": "3",
+    "value": "6",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
     "name": "Number of Ingest Drives",
-    "value": "23",
+    "value": "3",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "System Hours",
-    "value": "43000",
+    "value": "43090",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -826,7 +826,7 @@
   },
   {
     "name": "Scheduled IMB SM Self Test",
-    "value": "2025-07-31 18:40:49",
+    "value": "2025-08-05 13:13:10",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -841,7 +841,7 @@
   },
   {
     "name": "System Up Time",
-    "value": "1:01:24:40",
+    "value": "0:00:54:33",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -906,12 +906,12 @@
   },
   {
     "name": "Primary Storage Device",
-    "value": "ChristieNas",
+    "value": "Onboard Storage",
     "url": null
   },
   {
     "name": "Primary Drive Online",
-    "value": "False",
+    "value": "True",
     "url": "http://192.168.230.169/#/status/System"
   },
   {
@@ -1451,7 +1451,7 @@
   },
   {
     "name": "Light Source Active File",
-    "value": "*Default",
+    "value": "Default",
     "url": "http://192.168.230.169/#/status/Video"
   },
   {
@@ -1721,17 +1721,17 @@
   },
   {
     "name": "Scheduler Next Show ID",
-    "value": "9bb15143-0a0b-4110-a5dd-682be2278524",
+    "value": "b67f06ec-dc91-4f9d-879b-c1ba917b0afb",
     "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Scheduler Next Show Name",
-    "value": "Christie NAS List",
+    "value": "OBS List",
     "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
     "name": "Scheduler Next Show Time",
-    "value": "7/26/2025, 10:00:00 AM",
+    "value": "10/31/2025, 3:00:00 AM",
     "url": "http://192.168.230.169/#/status/Scheduler"
   },
   {
