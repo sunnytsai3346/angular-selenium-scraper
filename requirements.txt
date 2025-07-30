@@ -1,2 +1,3 @@
 selenium==4.34.2
 python-dotenv
+beautifulsoup4

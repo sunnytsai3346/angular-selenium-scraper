@@ -16,11 +16,12 @@ class Config:
     BASE_URL = "http://192.168.230.169/"
     SCRAPE_URLS = [
         '#/menu/MMM%2BABOT',
-        '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
-        '#/status/System', '#/status/Lamp', '#/status/Lens',
-        '#/status/Network', '#/status/Interlocks', '#/status/Serial',
-        '#/status/Video', '#/status/Playback', '#/status/Scheduler',
-        '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
+        '/#/dashboard', 
+        # '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
+        # '#/status/System', '#/status/Lamp', '#/status/Lens',
+        # '#/status/Network', '#/status/Interlocks', '#/status/Serial',
+        # '#/status/Video', '#/status/Playback', '#/status/Scheduler',
+        # '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
     ]
     OUTPUT_FILE = "status_data.json"
     WAIT_TIMEOUT = 20
@@ -86,6 +87,88 @@ def login(driver: webdriver.Chrome):
     except NoSuchElementException:
         logging.error("Could not find one of the login elements.")
         raise
+    
+def scrape_page_context(driver) -> Dict:
+    """Extracts a page's full visible context for LLM use."""
+    from bs4 import BeautifulSoup
+
+    context = {"url": driver.current_url, "sections": []}
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+
+    # Capture page title
+    title = soup.find("h1") or soup.find("mat-card-title")
+    if title:
+        context["title"] = title.get_text(strip=True)
+
+    # Use a set to track text content that has already been processed
+    processed_text = set()
+    if context.get("title"):
+        processed_text.add(context["title"])
+
+    # Strategy 1: Paired items with specific classes
+    paired_selectors = [
+        (".status-item-label", ".status-item-value"),
+        ("span#info-name", "span#info-value"),
+    ]
+    for label_selector, value_selector in paired_selectors:
+        labels = soup.select(label_selector)
+        values = soup.select(value_selector)
+        if len(labels) > 0 and len(labels) == len(values):
+            for label, value in zip(labels, values):
+                label_text = label.get_text(strip=True)
+                value_text = value.get_text(strip=True)
+                if label_text and value_text:
+                    context["sections"].append({"name": label_text, "value": value_text})
+                    processed_text.add(label_text)
+                    processed_text.add(value_text)
+
+    # Strategy 2: Tables
+    for table in soup.find_all("table"):
+        table_content = " ".join(table.stripped_strings)
+        if table_content in processed_text:
+            continue
+
+        headers = [th.get_text(strip=True) for th in table.find_all("th")]
+        rows_data = []
+        for row in table.find_all("tr"):
+            cells = [td.get_text(strip=True) for td in row.find_all("td")]
+            if not cells:
+                continue
+            if headers and len(headers) == len(cells):
+                rows_data.append(dict(zip(headers, cells)))
+            else:
+                rows_data.append(cells)
+        
+        if rows_data:
+            context["sections"].append({"table": {"headers": headers, "rows": rows_data}})
+            for s in table.stripped_strings:
+                processed_text.add(s)
+
+    # Strategy 3: Generic labels followed by a value
+    for label in soup.find_all("label"):
+        label_text = label.get_text(strip=True)
+        if label_text in processed_text:
+            continue
+        
+        next_el = label.find_next_sibling()
+        if next_el:
+            value_text = next_el.get_text(strip=True)
+            if value_text:
+                context["sections"].append({"name": label_text, "value": value_text})
+                processed_text.add(label_text)
+                processed_text.add(value_text)
+
+    # Capture remaining headings and paragraphs
+    for element in soup.find_all(["h2", "h3", "p"]):
+        text = element.get_text(strip=True)
+        if text and text not in processed_text:
+            if element.name in ["h2", "h3"]:
+                context["sections"].append({"heading": text})
+            else:
+                context["sections"].append({"text": text})
+            processed_text.add(text)
+
+    return context
 
 
 def scrape_page(driver: webdriver.Chrome) -> List[Dict[str, str]]:
@@ -182,13 +265,15 @@ def save_results(results: List[Dict[str, str]], output_file: str):
         logging.error(f"Error saving data to {output_file}: {e}")
 
 
-def main(output_file: Optional[str] = None, headless: bool = False):
+def main(output_file: Optional[str] = None, headless: bool = False, scrape_context: bool = False):
     """Main function to run the scraper."""
     setup_logging()
     output_file = output_file or Config.OUTPUT_FILE
     
     driver = setup_driver(headless=headless)
     all_data = []
+    all_context_data = []
+
     try:
         driver.get(Config.BASE_URL)
         login(driver)
@@ -197,24 +282,28 @@ def main(output_file: Optional[str] = None, headless: bool = False):
             full_url = f"{Config.BASE_URL}{hash_url}"
             logging.info(f"[{idx}/{len(Config.SCRAPE_URLS)}] Navigating to: {full_url}")
             try:
-                # Using direct navigation is more reliable than executing script
                 driver.get(full_url)
-                
-                # Wait for the URL to update
                 WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
                     EC.url_contains(hash_url.strip("#"))
                 )
 
-                scraped_data = scrape_page(driver)
-                if scraped_data:
-                    all_data.extend(scraped_data)
+                if scrape_context:
+                    context_data = scrape_page_context(driver)
+                    all_context_data.append(context_data)
+                else:
+                    scraped_data = scrape_page(driver)
+                    if scraped_data:
+                        all_data.extend(scraped_data)
 
             except TimeoutException:
                 logging.warning(f"Failed to load page for {hash_url}")
             except Exception as scrape_err:
                 logging.error(f"Failed to scrape {hash_url}: {scrape_err}")
 
-        save_results(all_data, output_file)
+        if scrape_context:
+            save_results(all_context_data, "status_context.json")
+        else:
+            save_results(all_data, output_file)
 
     except Exception as e:
         logging.critical(f"A critical error occurred: {e}")
@@ -228,7 +317,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scrape status data from a web page.")
     parser.add_argument("-o", "--output", help=f"Output file name (default: {Config.OUTPUT_FILE})")
     parser.add_argument("--headless", action="store_true", help="Run Chrome in headless mode.")
+    parser.add_argument("--context", action="store_true", help="Scrape full page context instead of specific data.")
     args = parser.parse_args()
     
-    main(output_file=args.output, headless=args.headless)
+    main(output_file=args.output, headless=args.headless, scrape_context=args.context)
 
