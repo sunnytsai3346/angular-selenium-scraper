@@ -5289,32 +5289,32 @@
     "userLevel": "20"
 },
 {
-    "name": "Battery 1 Voltage",
+    "name": "IMB Battery 1 Voltage",
     "url": "/#/status/Security",
     "userLevel": "20"
 },
 {
-    "name": "Battery 2 Voltage",
+    "name": "IMB Battery 2 Voltage",
     "url": "/#/status/Security",
     "userLevel": "20"
 },
 {
-    "name": "Battery 1 Voltage Good",
+    "name": "IMB Battery 1 Voltage Good",
     "url": "/#/status/Security",
     "userLevel": "20"
 },
 {
-    "name": "Battery 2 Voltage Good",
+    "name": "IMB Battery 2 Voltage Good",
     "url": "/#/status/Security",
     "userLevel": "20"
 },
 {
-    "name": "Battery 1 Voltage (mV)",
+    "name": "IMB Battery 1 Voltage (mV)",
     "url": "/#/status/Security",
     "userLevel": "20"
 },
 {
-    "name": "Battery 2 Voltage (mV)",
+    "name": "IMB Battery 2 Voltage (mV)",
     "url": "/#/status/Security",
     "userLevel": "20"
 },

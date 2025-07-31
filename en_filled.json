@@ -45,13 +45,13 @@
         "name": "Main System Version",
         "url": "/#/menu/MMM%2BABOT",
         "userLevel": "20",
-        "value": "202.6.0-2390"
+        "value": "102.5.0-7"
     },
     {
         "name": "View All Versions",
         "url": "/#/menu/MMM%2BABOT",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "License Agreements",
@@ -1005,13 +1005,13 @@
         "name": "Version",
         "url": "/#/menu/MMM%2BLASR/MMM%2BLDGS",
         "userLevel": "40",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Serial Numbers",
         "url": "/#/menu/MMM%2BLASR/MMM%2BLDGS",
         "userLevel": "40",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "Power Health",
@@ -1077,7 +1077,7 @@
         "name": "Ambient Temperature",
         "url": "/#/menu/MMM%2BLASR/MMM%2BLPWR",
         "userLevel": "40",
-        "value": "OPEN"
+        "value": null
     },
     {
         "name": "Humidity",
@@ -1155,7 +1155,7 @@
         "name": "Ambient Temperature",
         "url": "/#/menu/MMM%2BTPLS/MMM%2BLSPS",
         "userLevel": "40",
-        "value": "OPEN"
+        "value": null
     },
     {
         "name": "3D Sync",
@@ -1737,7 +1737,7 @@
         "name": "Missing serial numbers",
         "url": "/#/menu/MMM%2BSERV/MMM%2BPREF/Alarm%20Triggers",
         "userLevel": "40",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "Automation",
@@ -1815,7 +1815,7 @@
         "name": "Time Format",
         "url": "/#/menu/MMM%2BSERV/MMM%2BPREF/General",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Temperature Units",
@@ -1851,7 +1851,7 @@
         "name": "Session Timeout",
         "url": "/#/menu/MMM%2BSERV/MMM%2BPREF/General",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "HDR",
@@ -2247,7 +2247,7 @@
         "name": "IMB SM Time Adjust",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME/imbadjust",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "SNMP Settings",
@@ -2259,13 +2259,13 @@
         "name": "SNMP Version 2",
         "url": "#/menu/MMM%2BSERV/MMM%2BNTWK/SNMP",
         "userLevel": "40",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "SNMP Version 3",
         "url": "#/menu/MMM%2BSERV/MMM%2BNTWK/SNMP",
         "userLevel": "40",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Trap Receiver 1 IP",
@@ -2499,7 +2499,7 @@
         "name": "Main System Version: %1",
         "url": "/#/menu/MMM%2BSERV/MMM%2BUPGR",
         "userLevel": "40",
-        "value": "202.6.0-2390"
+        "value": null
     },
     {
         "name": "TCGD File Setup",
@@ -2625,7 +2625,7 @@
         "name": "Dark Time",
         "url": "/#/menu/MMM%2BIMGS/MMM%2BTHRD",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Output Delay",
@@ -2667,7 +2667,7 @@
         "name": "Time Setup",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "NTP Server Address",
@@ -2685,7 +2685,7 @@
         "name": "Time Zone Settings",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "Eastern (Toronto)"
+        "value": null
     },
     {
         "name": "Sync To IMB",
@@ -2709,7 +2709,7 @@
         "name": "Date and Time",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Minutes",
@@ -2745,7 +2745,7 @@
         "name": "IMB Time",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Current UTC date:",
@@ -2757,13 +2757,13 @@
         "name": "Current UTC time:",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "3/10/2025, 1:29:19 PM"
+        "value": null
     },
     {
         "name": "Projector Time Settings",
         "url": "/#/menu/MMM%2BSERV/MMM%2BTIME",
         "userLevel": "40",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "User Accounts",
@@ -2787,7 +2787,7 @@
         "name": "Warp File Setup",
         "url": "/#/menu/MMM%2BIMGS/MMM%2BWARP",
         "userLevel": "40",
-        "value": "Bypass.C4TW"
+        "value": null
     },
     {
         "name": "Warp File",
@@ -2973,7 +2973,7 @@
         "name": "Total Time: %L1",
         "url": "/#/menu/MMM%2BPLAY",
         "userLevel": "30",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Automation",
@@ -3261,13 +3261,13 @@
         "name": "EDR System Time",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "EDR FPGA Time Stamp",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "EDR Video Format",
@@ -3321,7 +3321,7 @@
         "name": "EDR Update Install Time",
         "url": "/#/status/Edr",
         "userLevel": "20",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Pipeline Mode",
@@ -4041,7 +4041,7 @@
         "name": "CAVE Blower 102",
         "url": "/#/status/Fans",
         "userLevel": "20",
-        "value": "3000 RPM"
+        "value": "2940 RPM"
     },
     {
         "name": "Card Cage Exhaust 10",
@@ -4341,7 +4341,7 @@
         "name": "Lamp Serial Number",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "Hours on Current Lamp",
@@ -4545,19 +4545,19 @@
         "name": "Third Party Laser Model",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "CP4450-RGB"
+        "value": null
     },
     {
         "name": "Third Party Laser Serial Number",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "Third Party Laser Build Date",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "2000-01-08"
+        "value": null
     },
     {
         "name": "Third Party Interlock Tripped",
@@ -4569,7 +4569,7 @@
         "name": "Third Party Laser Version",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Color Sensor Calibration",
@@ -4629,7 +4629,7 @@
         "name": "Light Source Chiller State",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Light Source Armed State",
@@ -4659,7 +4659,7 @@
         "name": "Light Source Model Name",
         "url": "/#/status/Lamp",
         "userLevel": "20",
-        "value": "NAS-S2"
+        "value": null
     },
     {
         "name": "Laser",
@@ -4683,7 +4683,7 @@
         "name": "LBM Ambient Health",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "OPEN"
+        "value": null
     },
     {
         "name": "LBM Fans Health",
@@ -5001,13 +5001,13 @@
         "name": "LM Boot Version Mismatch",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "False"
+        "value": null
     },
     {
         "name": "LM Main Version Mismatch",
         "url": "/#/status/Laser",
         "userLevel": "20",
-        "value": "False"
+        "value": null
     },
     {
         "name": "LM In Boot Mode",
@@ -5181,7 +5181,7 @@
         "name": "ILS Resetting",
         "url": "/#/status/Lens",
         "userLevel": "20",
-        "value": "Horizontal & Vertical & Focus"
+        "value": null
     },
     {
         "name": "ILS Temperature",
@@ -5499,7 +5499,7 @@
         "name": "IMB Network NAS IP",
         "url": "/#/status/Network",
         "userLevel": "20",
-        "value": "192.168.228.81"
+        "value": "192.168.228.21"
     },
     {
         "name": "IMB Network NAS Netmask",
@@ -5811,7 +5811,7 @@
         "name": "Playback Time Code",
         "url": "/#/status/Playback",
         "userLevel": "20",
-        "value": "2025-7-13 3:44:16 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+        "value": null
     },
     {
         "name": "Playback Duration",
@@ -5895,7 +5895,7 @@
         "name": "Playback 3D Playlist Entry ID",
         "url": "/#/status/Playback",
         "userLevel": "20",
-        "value": "False"
+        "value": null
     },
     {
         "name": "Playback Loaded Content",
@@ -6051,19 +6051,19 @@
         "name": "Scheduler Next Show ID",
         "url": "/#/status/Scheduler",
         "userLevel": "20",
-        "value": "07d8e22c-b352-4adc-be36-d03354f5f587"
+        "value": "b67f06ec-dc91-4f9d-879b-c1ba917b0afb"
     },
     {
         "name": "Scheduler Next Show Name",
         "url": "/#/status/Scheduler",
         "userLevel": "20",
-        "value": "01_3D_CACTUS_RIGHT_TST_F_EN-XX_UK_4K_20140905_ONS_OV"
+        "value": "OBS List"
     },
     {
         "name": "Scheduler Next Show Time",
         "url": "/#/status/Scheduler",
         "userLevel": "20",
-        "value": "3/11/2025, 1:55:00 AM"
+        "value": "10/31/2025, 3:00:00 AM"
     },
     {
         "name": "Security",
@@ -6153,19 +6153,19 @@
         "name": "SM Serial Number",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "SM Intopix Serial Number",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "SM Civolution Serial Number",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "SM Atmos Status",
@@ -6231,7 +6231,7 @@
         "name": "SM EPM Serial Number",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "SM Marriage Logical Tamper",
@@ -6327,13 +6327,13 @@
         "name": "FIPS Hardware Version",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "FIPS Model Name",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "NAS-S2"
+        "value": null
     },
     {
         "name": "FIPS State",
@@ -6348,37 +6348,37 @@
         "value": null
     },
     {
-        "name": "Battery 1 Voltage",
+        "name": "IMB Battery 1 Voltage",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
     },
     {
-        "name": "Battery 2 Voltage",
+        "name": "IMB Battery 2 Voltage",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
     },
     {
-        "name": "Battery 1 Voltage Good",
+        "name": "IMB Battery 1 Voltage Good",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
     },
     {
-        "name": "Battery 2 Voltage Good",
+        "name": "IMB Battery 2 Voltage Good",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
     },
     {
-        "name": "Battery 1 Voltage (mV)",
+        "name": "IMB Battery 1 Voltage (mV)",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
     },
     {
-        "name": "Battery 2 Voltage (mV)",
+        "name": "IMB Battery 2 Voltage (mV)",
         "url": "/#/status/Security",
         "userLevel": "20",
         "value": null
@@ -6387,7 +6387,7 @@
         "name": "Board Serial Number",
         "url": "/#/status/Security",
         "userLevel": "20",
-        "value": "Jay28"
+        "value": null
     },
     {
         "name": "Board Revision",
@@ -6447,7 +6447,7 @@
         "name": "Formatter Interface Conversion Board",
         "url": "/#/status/Serial",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "System",
@@ -6483,7 +6483,7 @@
         "name": "NTP enabled",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "True"
+        "value": null
     },
     {
         "name": "NTP Enabled",
@@ -6507,19 +6507,19 @@
         "name": "SM UTC Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "7/13/2025, 12:29:34 PM"
+        "value": "7/29/2025, 2:07:16 PM"
     },
     {
         "name": "UTC Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "3/10/2025, 1:29:19 PM"
+        "value": "7/29/2025, 2:07:08 PM"
     },
     {
         "name": "Local Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "3/10/2025, 9:29:19 AM"
+        "value": "7/29/2025, 10:07:08 AM"
     },
     {
         "name": "Local Time Offset",
@@ -6537,13 +6537,13 @@
         "name": "Free Memory",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "2.69 GB"
+        "value": "3.09 GB"
     },
     {
         "name": "Average CPU Usage",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "13"
+        "value": "15"
     },
     {
         "name": "Root Total Disk Space",
@@ -6555,7 +6555,7 @@
         "name": "Root Free Disk Space",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "1.74 GB"
+        "value": "1.42 GB"
     },
     {
         "name": "Primary Drive Online",
@@ -6597,13 +6597,13 @@
         "name": "Number of Content Drives",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "2"
+        "value": "6"
     },
     {
         "name": "Number of Ingest Drives",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "5"
+        "value": "3"
     },
     {
         "name": "Number of Configured NAS Devices",
@@ -6687,7 +6687,7 @@
         "name": "System Hours",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "42706"
+        "value": "43090"
     },
     {
         "name": "Light On Hours",
@@ -6753,7 +6753,7 @@
         "name": "Multi Projector Secondary Offline List",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "False"
+        "value": null
     },
     {
         "name": "RealD 3D EQ Enabled",
@@ -7209,7 +7209,7 @@
         "name": "System Up Time",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "1:21:20:17"
+        "value": "0:00:54:33"
     },
     {
         "name": "Laser Power Supply State",
@@ -7257,13 +7257,13 @@
         "name": "Scheduled IMB SM Self Test",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "2025-07-18 15:09:24"
+        "value": "2025-08-05 13:13:10"
     },
     {
         "name": "IMB Data Partition Free Disk Space",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "8.60 GB"
+        "value": "8.59 GB"
     },
     {
         "name": "IMB Data Partition Total Disk Space",
@@ -7317,7 +7317,7 @@
         "name": "SubModel Number",
         "url": "/#/status/System",
         "userLevel": "20",
-        "value": "CP4450-RGB"
+        "value": null
     },
     {
         "name": "MAGIC Drivers Status",
@@ -7347,19 +7347,19 @@
         "name": "Prime LE Red DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Prime LE Blue DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Prime LE Green DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Prime LE Prism",
@@ -7425,19 +7425,19 @@
         "name": "Pre LE Red DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Pre LE Blue DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Pre LE Green DMD",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Pre LE Prism",
@@ -7611,7 +7611,7 @@
         "name": "Room Ambient Temperature",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "OPEN"
+        "value": null
     },
     {
         "name": "Ambient",
@@ -7653,7 +7653,7 @@
         "name": "Liquid Cooling Manifold",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "24.06\u2103"
+        "value": "24.94\u2103"
     },
     {
         "name": "Chiller Setpoint Temperature",
@@ -7707,13 +7707,13 @@
         "name": "CAVE FPGA",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "51\u2103"
+        "value": "53\u2103"
     },
     {
         "name": "VOM FPGA",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "37\u2103"
+        "value": "38\u2103"
     },
     {
         "name": "FICB FPGA",
@@ -7725,25 +7725,25 @@
         "name": "Premod Red Formatter",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Premod Green Formatter",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Premod Blue Formatter",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Premod DMD Waterblock",
         "url": "/#/status/Temperatures",
         "userLevel": "20",
-        "value": "N/A"
+        "value": null
     },
     {
         "name": "Red Heat Sink",
@@ -7803,13 +7803,13 @@
         "name": "Versions",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Main System",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "202.6.0-2390"
+        "value": "102.5.0-7"
     },
     {
         "name": "Hotfixes Installed",
@@ -7935,13 +7935,13 @@
         "name": "FPGA Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "CFB FPGA Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Version Mismatch",
@@ -7953,7 +7953,7 @@
         "name": "Software Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Main PCB Hardware",
@@ -7983,7 +7983,7 @@
         "name": "Interlock Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Interlock",
@@ -8001,13 +8001,13 @@
         "name": "CSense Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "EDR FW Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "EDR FW",
@@ -8055,7 +8055,7 @@
         "name": "Core Software",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "cave root 2025-07-08.193627"
+        "value": "cave root 2025-07-15.130022"
     },
     {
         "name": "VOM Hardware",
@@ -8073,7 +8073,7 @@
         "name": "System Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Commit ID",
@@ -8157,7 +8157,7 @@
         "name": "Light Source Software Version",
         "url": "/#/status/Versions",
         "userLevel": "20",
-        "value": "4.3.3"
+        "value": null
     },
     {
         "name": "Upgrading...",
@@ -8451,7 +8451,7 @@
         "name": "Degamma Active File",
         "url": "/#/status/Video",
         "userLevel": "20",
-        "value": "Auto"
+        "value": null
     },
     {
         "name": "MCGD Active File",
@@ -8589,13 +8589,13 @@
         "name": "Video Output X Position",
         "url": "/#/status/Video",
         "userLevel": "20",
-        "value": "0"
+        "value": null
     },
     {
         "name": "Video Output Y Position",
         "url": "/#/status/Video",
         "userLevel": "20",
-        "value": "0"
+        "value": null
     },
     {
         "name": "Video Output X Pos",
@@ -8643,7 +8643,7 @@
         "name": "Video Input Vertical Frequency",
         "url": "/#/status/Video",
         "userLevel": "20",
-        "value": "IMB"
+        "value": null
     },
     {
         "name": "Video 3D Mode",
