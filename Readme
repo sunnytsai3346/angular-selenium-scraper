@@ -1,9 +1,28 @@
 #### angular-selenium-scraper (Angular frontend + Selenium scraping automation) ####
-=====================================================================
+----------------------------------------------------
+Description:
+An Angular-based interface that launches Selenium-based browser automation for data scraping tasks like scheduling, crawling, or test automation.
+
+README Sections:
+
+🌐 Overview — purpose of combining Angular UI with Selenium scripts.
+
+⚙️ Tech Stack — Angular, TypeScript, Selenium WebDriver, Node.js Python
+
+✨ Features — trigger scrapes via UI, configure targets, view results.
+
+🔧 Setup Step-by-Step — environment setup, install Node + Selenium, launch Angular app and scraper.
+
+📊 Sample Output — example scraped HTML or data logs.
+
+🧪 Testing — E2E tests via Selenium and Jest if applicable.
+
+🚀 Expansion Ideas — build full ETL pipeline, schedule jobs, integrate NLP route to analyse scraped data.
 
 
 
 
+----------------------------------------------------
 pip install selenium
 Go to https://chromedriver.chromium.org/downloads
 Download the version matching your installed Chrome.
