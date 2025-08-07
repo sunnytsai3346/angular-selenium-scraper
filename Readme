@@ -19,9 +19,6 @@ README Sections:
 
 🚀 Expansion Ideas — build full ETL pipeline, schedule jobs, integrate NLP route to analyse scraped data.
 
-
-
-
 ----------------------------------------------------
 pip install selenium
 Go to https://chromedriver.chromium.org/downloads
