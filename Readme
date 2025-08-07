@@ -1,3 +1,9 @@
+#### angular-selenium-scraper (Angular frontend + Selenium scraping automation) ####
+=====================================================================
+
+
+
+
 pip install selenium
 Go to https://chromedriver.chromium.org/downloads
 Download the version matching your installed Chrome.
