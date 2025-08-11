@@ -17,11 +17,13 @@ class Config:
     SCRAPE_URLS = [
         '#/menu/MMM%2BABOT',
         '/#/dashboard', 
-        # '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
-        # '#/status/System', '#/status/Lamp', '#/status/Lens',
-        # '#/status/Network', '#/status/Interlocks', '#/status/Serial',
-        # '#/status/Video', '#/status/Playback', '#/status/Scheduler',
-        # '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
+        '#/menu/MMM%2BSCHE',
+        '#/menu/MMM%2BPLAY'
+        '#/status/Versions', '#/status/Fans', '#/status/Temperatures',
+        '#/status/System', '#/status/Lamp', '#/status/Lens',
+        '#/status/Network', '#/status/Interlocks', '#/status/Serial',
+        '#/status/Video', '#/status/Playback', '#/status/Scheduler',
+        '#/status/Automation', '#/status/ChristieNAS', '#/status/Debugging',
     ]
     OUTPUT_FILE = "status_data.json"
     WAIT_TIMEOUT = 20
@@ -49,11 +51,12 @@ def setup_driver(headless: bool = False) -> webdriver.Chrome:
 
 
 def login(driver: webdriver.Chrome):
-    """Handles the login process."""
+    """Handles the login process and any subsequent alarm dialogs."""
     try:
         # Check if already logged in by looking for the dashboard URL
         if "dashboard" in driver.current_url:
             logging.info("Already logged in.")
+            handle_alarms_dialog(driver)  # Check for dialog even if logged in
             return
 
         username_field = WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
@@ -71,15 +74,8 @@ def login(driver: webdriver.Chrome):
             EC.url_contains("dashboard"))
         logging.info("Login successful.")
 
-        # Click Acknowledge button if it appears
-        try:
-            acknowledge_button = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'Acknowledge')]"))
-            )
-            acknowledge_button.click()
-            logging.info("Clicked 'Acknowledge' button to close dialog.")
-        except TimeoutException:
-            logging.info("'Acknowledge' button not found, continuing.")
+        # After login, check for and handle the alarm dialog
+        handle_alarms_dialog(driver)
 
     except TimeoutException:
         logging.error("Login elements not found or login failed.")
@@ -87,10 +83,45 @@ def login(driver: webdriver.Chrome):
     except NoSuchElementException:
         logging.error("Could not find one of the login elements.")
         raise
+
+
+def handle_alarms_dialog(driver: webdriver.Chrome):
+    """Checks for and handles the new alarms dialog by its ID."""
+    try:
+        # Wait for the dialog with the specific ID to be present
+        dialog = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.ID, "cptr-new-alarms-dialog"))
+        )
+        logging.info("Alarm dialog 'cptr-new-alarms-dialog' detected.")
+
+        # Find the Acknowledge button within the dialog and click it
+        acknowledge_button = dialog.find_element(By.XPATH, ".//button[.//span[contains(text(), 'Acknowledge')]]")
+        acknowledge_button.click()
+
+        # Wait for the dialog to disappear to confirm the action
+        WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
+            EC.invisibility_of_element_located((By.ID, "cptr-new-alarms-dialog"))
+        )
+        logging.info("Clicked 'Acknowledge' button and dialog has closed.")
+
+    except TimeoutException:
+        # This is the expected case if the dialog doesn't appear
+        logging.info("Alarm dialog 'cptr-new-alarms-dialog' not found, continuing.")
+    except NoSuchElementException:
+        logging.error("Could not find 'Acknowledge' button within the alarm dialog.")
     
 def scrape_page_context(driver) -> Dict:
     """Extracts a page's full visible context for LLM use."""
     from bs4 import BeautifulSoup
+
+    try:
+        # Wait for some content to be loaded, using a general selector.
+        # This helps ensure that dynamic content from frameworks like Angular is present.
+        WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "h1, mat-card-title, .status-item-label, table, label"))
+        )
+    except TimeoutException:
+        logging.warning(f"Timed out waiting for page content to load at {driver.current_url}. Scraping may be incomplete.")
 
     context = {"url": driver.current_url, "sections": []}
     soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -150,9 +181,18 @@ def scrape_page_context(driver) -> Dict:
         if label_text in processed_text:
             continue
         
-        next_el = label.find_next_sibling()
+        # Find the next sibling that is a tag, skipping NavigableStrings (like whitespace)
+        next_el = label.next_sibling
+        while next_el and not next_el.name:
+            next_el = next_el.next_sibling
+
         if next_el:
-            value_text = next_el.get_text(strip=True)
+            value_text = ""
+            if next_el.name == 'input':
+                value_text = next_el.get('value', '').strip()
+            else: # Works for textarea and other tags
+                value_text = next_el.get_text(strip=True)
+
             if value_text:
                 context["sections"].append({"name": label_text, "value": value_text})
                 processed_text.add(label_text)
@@ -286,6 +326,9 @@ def main(output_file: Optional[str] = None, headless: bool = False, scrape_conte
                 WebDriverWait(driver, Config.WAIT_TIMEOUT).until(
                     EC.url_contains(hash_url.strip("#"))
                 )
+
+                # After navigating, always check for the alarm dialog
+                handle_alarms_dialog(driver)
 
                 if scrape_context:
                     context_data = scrape_page_context(driver)
